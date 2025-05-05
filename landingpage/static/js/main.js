@@ -34,7 +34,7 @@ function openModal(category) {
             'Celengan'
         ],
         pupuk: [
-            'Pupuk'
+            'Pupuk Organik'
         ],
     };
     console.log("Produk untuk kategori", category, ":", allProducts[category]);

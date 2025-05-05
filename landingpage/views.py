@@ -91,6 +91,7 @@ def polls(request):
         'TempatBakaran':'/static/images/TempatBakaran.png',
         'TaplakMeja':'/static/images/TaplakMeja.png',
         'Pot':'/static/images/Pot.png',
+        'Pupuk': '/static/images/Pupuk Organik.png',
         
     }
     
