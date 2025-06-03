@@ -1,5 +1,17 @@
 from django.db import models
 
+class ProductCategory(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
+
+class Product(models.Model):
+    name = models.CharField(max_length=255)
+    category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='product_images/', blank=True, null=True)
+
 class PredictionResult(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField(default=0)
