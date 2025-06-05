@@ -21,7 +21,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    
+    'jazzmin',
     'landingpage',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -118,3 +118,45 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Admin Toko Jaya Baru",
+    "site_header": "Toko Jaya Baru Dashboard",
+    "site_brand": "Toko Jaya Baru",
+    "welcome_sign": "Selamat datang di Admin Toko Jaya Baru",
+
+    "custom_css": "css/admin.css", 
+    "site_logo": "assets/logo-2.png", 
+
+    "icons": {
+        "auth.User": "fas fa-user",
+        "auth.Group": "fas fa-users",
+        "landingpage.PredictionResult": "fas fa-chart-line",  
+        "landingpage.ProductCategory": "fas fa-th-list",  
+        "landingpage.Product": "fas fa-box",
+    },
+
+    "show_sidebar": True,
+    "navigation_expanded": True,
+
+    # "side_menu": [
+    #     {
+    #         "app": "landingpage",
+    #         "model": "PredictionResult",
+    #         "name": "Prediction Results",
+    #         "icon": "fas fa-chart-line"
+    #     },
+    #     {
+    #         "app": "landingpage",
+    #         "model": "ProductCategory",
+    #         "name": "Product Categories",
+    #         "icon": "fas fa-th-list"
+    #     },
+    #     {
+    #         "app": "landingpage",
+    #         "model": "Product",
+    #         "name": "Products",
+    #         "icon": "fas fa-box"
+    #     }
+    # ]
+}

@@ -1,11 +1,30 @@
 # views.py
 from django.shortcuts import render
+from django.conf import settings
 import pandas as pd
+from django.http import JsonResponse
 from .ml_utils import get_models_and_preprocessors, preprocess_input_data
-from .models import PredictionResult
+from .models import PredictionResult, ProductCategory, Product
 
 def home(request):
-    return render(request, 'landingpage/home.html')
+    categories = ProductCategory.objects.all()  # ambil semua kategori
+    return render(request, 'landingpage/home.html', {'categories': categories})
+
+def get_products_by_category(request, category_name):
+    try:
+        category = ProductCategory.objects.get(name__iexact=category_name)
+        products = Product.objects.filter(category=category)
+        product_data = [
+            {
+                'name': product.name,
+                'image': product.image.url if product.image else '',
+                'description': product.description or ''
+            }
+            for product in products
+        ]
+        return JsonResponse({'products': product_data})
+    except ProductCategory.DoesNotExist:
+        return JsonResponse({'products': []})
 
 def polls(request):
     models = get_models_and_preprocessors()
@@ -15,12 +34,16 @@ def polls(request):
     label_encoder_target = models.get('label_encoder_target')
     produk_kategori_mapping = models.get('produk_kategori_mapping')
 
-    # Static image map
-    products_images = {
-        'Baskom': '/static/images/baskom.png',
-        'Gembok': '/static/images/gembok.png',
-        'Pupuk': '/static/images/Pupuk Organik.png',
-        # ... add all as before
+    def normalize_name(name):
+        return name.strip().lower()
+
+    # Ambil semua produk dari database
+    products = Product.objects.all()
+
+    # Buat dict nama produk (normalize) ke url gambar
+    products_images_by_normalized = {
+        normalize_name(p.name): (p.image.url if p.image else '/static/images/default.png')
+        for p in products
     }
 
     if request.method == 'POST':
@@ -58,8 +81,14 @@ def polls(request):
             prediction = xgb_pipeline_model.predict(processed)
             predicted_category = label_encoder_target.inverse_transform([prediction[0]])[0]
 
-            recommended = produk_kategori_mapping.get(predicted_category, [])
-            recommended = list(set([p.strip().replace(" ", "") for p in recommended]))
+            recommended_raw = produk_kategori_mapping.get(predicted_category, [])
+            recommended = list(set([p.strip() for p in recommended_raw]))
+
+            # Buat dictionary product_images berdasarkan recommended
+            product_images = {}
+            for p in recommended:
+                key = normalize_name(p)
+                product_images[p] = products_images_by_normalized.get(key, '/static/images/default.png')
 
             PredictionResult.objects.create(
                 name=name,
@@ -81,9 +110,7 @@ def polls(request):
                 'unit': unit,
                 'category': predicted_category,
                 'recommended': recommended,
-                'product_images': {
-                    p: products_images.get(p, '/static/images/default.png') for p in recommended
-                }
+                'product_images': product_images,
             }
 
             return render(request, 'landingpage/polls.html', {

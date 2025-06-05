@@ -2,7 +2,6 @@
 function openModal(category) {
     console.log("openModal dipanggil dengan kategori:", category);
     const modal = document.getElementById('productModal');
-    console.log("Elemen modal:", modal);
     const modalTitle = document.getElementById('modal-title');
     const modalProducts = document.getElementById('modal-products');
     const paginationControls = document.getElementById('modal-pagination');
@@ -12,41 +11,16 @@ function openModal(category) {
     const totalPagesSpan = document.getElementById('totalPages');
 
     modalProducts.innerHTML = ''; // Clear previous product list
-    const staticUrl = document.getElementById('static-url').dataset.staticUrl;
 
-    // Define all products
-    const allProducts = {
-        dapur: [
-            'Baskom', 'Batu Asah', 'Botol Kecap', 'Box Donat', 'Celemek', 'Ember', 'Garpu', 'Gas Portable', 'Gayung',
-            'Jepitan Bakaran', 'Keranjang Sampah', 'Keset Kaki', 'Kuningan Kompor', 'Mancis', 'Panci', 'Perangkap Tikus','Pisau', 'Regulator', 'Sapu', 'Saringan', 'Selang Gas', 'Sendok', 'Serbet','tampi', 'Tudung Saji', 'Toples','tempat bakaran',
-        ],
-        elektronik: [
-            'Fitting', 'Isolasi', 'Kabel', 'Kalkulator', 'Lampu LED', 'Plug', 'Saklar', 'Socket','Stop Kontak', 'Test Pen'
-        ],
-        perkakas: [
-            'Elbow', 'Evamatic', 'Klem', 'Kran', 'Kuas', 'Lem Lilin', 'Mata Gerinda', 'Meteran', 'Obeng',
-            'Paku', 'Sarung Tangan', 'Seal Tape', 'Selang', 'Skop', 'Skrap', 'Tali tambang', 'Thinner'
-        ],
-        perlengkapanRumah: [
-            'Gembok', 'Hanger', 'Jas Hujan', 'Jepitan Baju', 'Karpet', 'Klem Selang', 'Payung', 'Polybag','TanahCampur','Tas','Sekam'
-        ],
-        souvenir: [
-            'Celengan'
-        ],
-        pupuk: [
-            'Pupuk Organik'
-        ],
-    };
-    console.log("Produk untuk kategori", category, ":", allProducts[category]);
+    const staticUrl = document.getElementById('static-url')?.dataset?.staticUrl || ''; // Optional
 
-    // Update modal title based on category
     const titles = {
-        dapur: 'Peralatan Dapur',
-        elektronik: 'Elektronik',
-        perkakas: 'Perkakas',
-        perlengkapanRumah: 'Perlengkapan Rumah',
-        pupuk: 'Pupuk',
-        souvenir: 'Souvenir'
+        'peralatan-dapur': 'Peralatan Dapur',
+        'elektronik': 'Elektronik',
+        'perkakas': 'Perkakas',
+        'perlengkapan-rumah': 'Perlengkapan Rumah',
+        'pupuk': 'Pupuk',
+        'souvenir': 'Souvenir'
     };
     modalTitle.innerHTML = titles[category] || 'Products';
 
@@ -55,25 +29,19 @@ function openModal(category) {
     const productsPerPage = 6;
 
     function displayProducts(productsToDisplay) {
-        console.log("Menampilkan produk:", productsToDisplay);
         let productHTML = productsToDisplay.map(product => `
-            <div class="product-card" data-product-name="${product}">
-                <img src="${staticUrl}images/${product.replace(/\s+/g, '')}.png" alt="${product}">
-                <h4>${product}</h4>
+            <div class="product-card" data-product-name="${product.name}">
+                <img src="${product.image}" alt="${product.name}" style="width: 100px; height: 100px; object-fit: contain; background-color: #f5f5f5;" />
+                <h4>${product.name}</h4>
             </div>
         `).join('');
         modalProducts.innerHTML = productHTML;
 
-        console.log("Jumlah elemen product-card setelah render:", modalProducts.querySelectorAll('.product-card').length);
-
-        // Pastikan event listener dipasang setelah elemen benar-benar ada di DOM
         modalProducts.querySelectorAll('.product-card').forEach(card => {
-            card.addEventListener('click', function() {
+            card.addEventListener('click', function () {
                 const productName = this.dataset.productName;
                 console.log(`Produk "${productName}" diklik!`);
-                // Tambahkan logika yang diinginkan di sini
             });
-            console.log("Event listener ditambahkan ke:", card);
         });
     }
 
@@ -84,12 +52,7 @@ function openModal(category) {
         prevPageButton.disabled = currentPage === 1;
         nextPageButton.disabled = currentPage === totalPages;
 
-        // Tampilkan atau sembunyikan kontrol paginasi jika ada lebih dari satu halaman
-        if (totalPages > 1) {
-            paginationControls.style.display = 'flex';
-        } else {
-            paginationControls.style.display = 'none';
-        }
+        paginationControls.style.display = totalPages > 1 ? 'flex' : 'none';
     }
 
     function showPage(pageNumber) {
@@ -101,39 +64,52 @@ function openModal(category) {
         updatePagination();
     }
 
-    if (allProducts[category]) {
-        currentProducts = allProducts[category];
-        showPage(1); // Tampilkan halaman pertama
+    // FETCH products dari backend sesuai kategori
+    fetch(`/get-products/${category}/`)
+        .then(response => {
+            if (!response.ok) throw new Error("Gagal mengambil data produk");
+            return response.json();
+        })
+        .then(data => {
+            currentProducts = data.products; // format: [{name: ..., image: ...}]
+            if (currentProducts.length === 0) {
+                modalProducts.innerHTML = '<p>Tidak ada produk dalam kategori ini.</p>';
+                paginationControls.style.display = 'none';
+                return;
+            }
+            showPage(1); // Tampilkan halaman pertama
+        })
+        .catch(error => {
+            console.error("Terjadi kesalahan saat mengambil produk:", error);
+            modalProducts.innerHTML = '<p>Gagal memuat produk.</p>';
+        });
 
-        // Coloring title if needed
-        const categoriesWithBlueTitle = ['dapur', 'elektronik', 'perkakas', 'perlengkapanRumah', 'pupuk', 'souvenir'];
-        if (categoriesWithBlueTitle.includes(category)) {
-            modalTitle.classList.add('blue-title');
-        } else {
-            modalTitle.classList.remove('blue-title');
-        }
-
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden'; // Disable scroll when modal is open
-        console.log("Modal ditampilkan untuk kategori:", category);
+    // Judul kategori warna biru (opsional)
+    const categoriesWithBlueTitle = ['peralatan-dapur', 'elektronik', 'perkakas', 'perlengkapan-rumah', 'pupuk', 'souvenir'];
+    if (categoriesWithBlueTitle.includes(category)) {
+        modalTitle.classList.add('blue-title');
     } else {
-        console.log("Kategori tidak ditemukan untuk:", category);
+        modalTitle.classList.remove('blue-title');
     }
 
-    // Event listeners for pagination buttons
-    prevPageButton.onclick = function() {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Disable scroll when modal is open
+
+    // Pagination button events
+    prevPageButton.onclick = function () {
         if (currentPage > 1) {
             showPage(currentPage - 1);
         }
     };
 
-    nextPageButton.onclick = function() {
+    nextPageButton.onclick = function () {
         const totalPages = Math.ceil(currentProducts.length / productsPerPage) || 1;
         if (currentPage < totalPages) {
             showPage(currentPage + 1);
         }
     };
 }
+
 
 // Close Modal Function (remains the same)
 function closeModal() {

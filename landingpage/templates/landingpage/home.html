@@ -74,30 +74,16 @@
     <div class="container">
         <h2 class="fade-in">Category Products</h2>
         <div class="cards">
-            <div class="card" onclick="openModal('dapur')">
-                <img src="{% static 'images/Peralatan_Dapur.png' %}" alt="Peralatan Dapur">
-                <h3>Peralatan Dapur</h3>
-            </div>
-            <div class="card" onclick="openModal('perlengkapanRumah')">
-                <img src="{% static 'images/peralatan_rumah.png' %}" alt="Perlengkapan Rumah">
-                <h3>Perlengkapan Rumah</h3>
-            </div>
-            <div class="card" onclick="openModal('elektronik')">
-                <img src="{% static 'images/Elektronik.png' %}" alt="Elektronik">
-                <h3>Elektronik</h3>
-            </div>
-            <div class="card" onclick="openModal('perkakas')">
-                <img src="{% static 'images/perkakas.png' %}" alt="Perkakas">
-                <h3>Perkakas</h3>
-            </div>
-            <div class="card" onclick="openModal('souvenir')">
-                <img src="{% static 'images/souvenir.png' %}" alt="Souvenir">
-                <h3>Souvenir</h3>
-            </div>
-            <div class="card" onclick="openModal('pupuk')">
-                <img src="{% static 'images/pupuk.png' %}" alt="Pupuk">
-                <h3>Pupuk</h3>
-            </div>
+            {% for category in categories %}
+                <div class="card" onclick="openModal('{{ category.name|urlencode }}')">
+                    {% if category.image %}
+                        <img src="{{ category.image.url }}" alt="{{ category.name }}">
+                    {% else %}
+                        <img src="{% static 'images/default.png' %}" alt="Default Image">
+                    {% endif %}
+                    <h3>{{ category.name }}</h3>
+                </div>
+            {% endfor %}
         </div>
         
     </div>
