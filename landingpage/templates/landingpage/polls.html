@@ -1,0 +1,108 @@
+{% load static %}
+{% load custom_filters %}
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulir Prediksi Produk</title>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/polls.css' %}" />
+</head>
+<body class="polls">
+    <div class="container">
+        <h1>Prediksi Pembelian Anda</h1>
+
+        <form method="post" action="{% url 'landingpage_polls' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" name="name" id="name" value="{{ form_data.name|default:'' }}" required />
+            </div>
+
+            <div class="form-group">
+                <label for="age">Usia</label>
+                <input type="number" name="age" id="age" value="{{ form_data.age|default:'' }}" required />
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin</label>
+                <select name="gender" id="gender" required>
+                    <option value="Laki-laki" {% if form_data.gender == 'Laki-laki' %}selected{% endif %}>Laki-laki</option>
+                    <option value="Perempuan" {% if form_data.gender == 'Perempuan' %}selected{% endif %}>Perempuan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="occupation">Pekerjaan</label>
+                <select name="occupation" id="occupation" required>
+                    <option value="Pekerja Pabrik" {% if form_data.occupation == 'Pekerja Pabrik' %}selected{% endif %}>Pekerja Pabrik</option>
+                    <option value="Pegawai Kantor" {% if form_data.occupation == 'Pegawai Kantor' %}selected{% endif %}>Pegawai Kantor</option>
+                    <option value="Ibu Rumah Tangga" {% if form_data.occupation == 'Ibu Rumah Tangga' %}selected{% endif %}>Ibu Rumah Tangga</option>
+                    <option value="Karyawan Swasta" {% if form_data.occupation == 'Karyawan Swasta' %}selected{% endif %}>Karyawan Swasta</option>
+                    <option value="Teknisi" {% if form_data.occupation == 'Teknisi' %}selected{% endif %}>Teknisi</option>
+                    <option value="Pelajar/Mahasiswa" {% if form_data.occupation == 'Pelajar/Mahasiswa' %}selected{% endif %}>Pelajar/Mahasiswa</option>
+                    <option value="Pengusaha" {% if form_data.occupation == 'Pengusaha' %}selected{% endif %}>Pengusaha</option>
+                    <option value="Supir/Ojek Online" {% if form_data.occupation == 'Supir/Ojek Online' %}selected{% endif %}>Supir/Ojek Online</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="event">Acara</label>
+                <select name="event" id="event" required>
+                    <option value="Weekend" {% if form_data.event == 'Weekend' %}selected{% endif %}>Weekend</option>
+                    <option value="Weekday" {% if form_data.event == 'Weekday' %}selected{% endif %}>Weekday</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Try To Predict !</button>
+        </form>
+
+        <div class="back-button">
+            <a href="{% url 'home' %}" class="back-btn">Back</a>
+        </div>
+
+        {% if error %}
+            <div class="error-message">
+                <h2>Terjadi Kesalahan</h2>
+                <p>{{ error }}</p>
+            </div>
+        {% endif %}
+    </div>
+
+    {% if result %}
+    <div id="resultModal" class="modal" style="display: block;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Halo, {{ result.name }}!</h2>
+            <p><strong>Kategori Produk:</strong> {{ result.category }}</p>
+            <p><strong>Daftar Produk:</strong></p>
+            <div id="modal-products" class="product-grid">
+                {% for product in result.recommended %}
+                    <div class="product-card" data-product-name="{{ product }}">
+                        <img src="{{ result.product_images|get_item:product }}" alt="{{ product }}" />
+                        <h4>{{ product }}</h4>
+                    </div>
+                {% endfor %}
+            </div>
+
+            {% if result.recommended|length > 6 %}
+                <div id="modal-pagination">
+                    <button id="prevPage" disabled>Sebelumnya</button>
+                    <span id="currentPage">1</span> / <span id="totalPages">1</span>
+                    <button id="nextPage">Berikutnya</button>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <script>
+        const allProductsData = {{ result.recommended|safe|default:"[]" }};
+        const productImagesData = {{ result.product_images|safe|default:"{}" }};
+        const staticUrl = "{% static 'images/' %}";
+    </script>
+    <script src="{% static 'js/polls.js' %}"></script>
+</body>
+</html>

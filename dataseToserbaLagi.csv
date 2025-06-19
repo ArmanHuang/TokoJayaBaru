@@ -1,0 +1,851 @@
+Tanggal Penjualan;Nama Customer;Usia;Gender;Pekerjaan;Event;Nama Produk;Kategori Produk;Jumlah;Satuan;Merk;Harga Produk;Total Harga
+03-Jan-25;Rida;30;Perempuan;Ibu Rumah Tangga;Weekday;Baskom;Peralatan Dapur;1;Meter;GM;20.000;20.000
+01-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+04-Jan-25;Fauzan;41;Laki-laki;Pekerja Pabrik;Weekend;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+07-Jan-25;Hendra;40;Laki-laki;Karyawan Swasta;Weekday;Baskom;Peralatan Dapur;1;Pcs;GM;35.000;35.000
+08-Jan-25;Ardi;42;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+09-Jan-25;Eko;45;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+13-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+13-Jan-25;Sam;41;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+15-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+01-Jan-25;Maya;30;Perempuan;Pegawai Kantor;Weekday;Fitting;Elektronik;3;Pcs;Visalux;10.000;30.000
+03-Jan-25;Tia;25;Perempuan;Pegawai Kantor;Weekday;Fitting;Elektronik;5;Pcs;Visalux;10.000;50.000
+16-Jan-25;Dani;37;Laki-laki;Karyawan Swasta;Weekday;Baskom;Peralatan Dapur;1;pcs;Lion Star;35.000;35.000
+12-Jan-25;Teguh;35;Laki-laki;Karyawan Swasta;Weekend;Baskom ;Peralatan Dapur;1;pcs;Lion Star;35.000;35.000
+19-Jan-25;Yusuf;41;Laki-laki;Pekerja Pabrik;Weekend;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+03-Feb-25;Siti;22;Perempuan;Pelajar/Mahasiswa;Weekday;Celengan ;Souvenir;3;Pcs;Tidak Ada Merk;5.000;15.000
+07-Jan-25;Ratna;27;Perempuan;Pegawai Kantor;Weekday;Fitting;Elektronik;2;Pcs;Visalux;10.000;20.000
+17-Jan-25;Nur;24;Perempuan;Pegawai Kantor;Weekday;Fitting;Elektronik;2;pcs;Visalux;10.000;20.000
+20-Jan-25;Samsul;30;Laki-laki;Teknisi;Weekend;Fitting ;Elektronik;5;Pcs;Visalux;4.000;20.000
+03-Jan-25;Hendra;34;Laki-laki;Teknisi;Weekday;Isolasi;Elektronik;5;Pcs;Vini Tape;5.000;25.000
+05-Jan-25;Hendra;34;Laki-laki;Teknisi;Weekend;Isolasi;Elektronik;5;Pcs;Vini Tape;5.000;25.000
+09-Jan-25;Melati;38;Perempuan;Ibu Rumah Tangga;Weekday;Baskom;Peralatan Dapur;2;Pcs;GM;20.000;40.000
+22-Jan-25;Ridwan;40;Laki-laki;Karyawan Swasta;Weekday;Baskom ;Peralatan Dapur;1;pcs;Lion Star;35.000;35.000
+20-Jan-25;Fajar;41;Laki-laki;Pekerja Pabrik;Weekend;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+18-Jan-25;Wulan;44;Perempuan;Ibu Rumah Tangga;Weekday;Baskom;Peralatan Dapur;1;Goni;GM;20.000;20.000
+04-Jan-25;Desi;37;Perempuan;Ibu Rumah Tangga;Weekday;Baskom ;Peralatan Dapur;1;Roll;GM;20.000;20.000
+03-Feb-25;Reyhan;41;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+18-Jan-25;Citra;20;Perempuan;Pelajar/Mahasiswa;Weekday;Gembok;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;15.000;15.000
+24-Jan-25;Yanti;30;Perempuan;Ibu Rumah Tangga;Weekday;Baskom ;Peralatan Dapur;2;Pcs;GM;20.000;40.000
+18-Jan-25;Teguh;35;Laki-laki;Teknisi;Weekday;Isolasi;Elektronik;5;Pcs;Vini Tape;4.000;20.000
+24-Jan-25;Citra;30;Perempuan;Ibu Rumah Tangga;Weekday;Baskom ;Peralatan Dapur;2;Pcs;GM;20.000;40.000
+22-Jan-25;Arif;39;Laki-laki;Karyawan Swasta;Weekday;Baskom ;Peralatan Dapur;1;Pcs;Lion Star;35.000;35.000
+11-Jan-25;Yulia;19;Perempuan;Pelajar/Mahasiswa;Weekend;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;15.000;15.000
+01-Jan-25;Gilang;41;Laki-laki;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+24-Jan-25;Joko;37;Laki-laki;Karyawan Swasta;Weekday;Baskom ;Peralatan Dapur;1;Pcs;Lion Star;35.000;35.000
+13-Jan-25;Yanti;21;Perempuan;Pelajar/Mahasiswa;Weekend;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;10.000;10.000
+09-Jan-25;Tono;33;Laki-laki;Karyawan Swasta;Weekday;Batu Asah;Peralatan Dapur;1;Pcs;Jaya Mata;50.000;50.000
+15-Jan-25;Bayu;19;Laki-laki;Pelajar/Mahasiswa;Weekday;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;10.000;10.000
+07-Jan-25;Rahmat;37;Laki-laki;Karyawan Swasta;Weekday;Batu Asah ;Peralatan Dapur;1;Pcs;Jaya Mata;50.000;50.000
+01-Jan-25;Siti;32;Perempuan;Ibu Rumah Tangga;Weekday;Celemek ;Peralatan Dapur;1;Pcs;Tidak Ada Merk;29.000;29.000
+05-Jan-25;Rizky;30;Perempuan;Ibu Rumah Tangga;Weekend;Ember;Peralatan Dapur;1;Pcs;GM;50.000;50.000
+19-Jan-25;Siti;32;Perempuan;Ibu Rumah Tangga;Weekend;Ember ;Peralatan Dapur;1;Pcs;GM;50.000;50.000
+05-Jan-25;Heri;34;Laki-laki;Karyawan Swasta;Weekend;Botol Kecap;Peralatan Dapur;3;Pcs;Lion Star;10.000;30.000
+03-Jan-25;Teguh;42;Laki-laki;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+20-Jan-25;Samsul;30;Laki-laki;Teknisi;Weekend;Isolasi;Elektronik;5;Pcs;Vini Tape;5.000;25.000
+03-Feb-25;Dewi;45;Perempuan;Ibu Rumah Tangga;Weekday;Ember ;Peralatan Dapur;1;Pcs;GM;50.000;50.000
+05-Jan-25;Adit;37;Laki-laki;Karyawan Swasta;Weekend;Box Donat;Peralatan Dapur;2;Lusin;Shinpo;30.000;60.000
+05-Jan-25;Agus;35;Laki-laki;Teknisi;Weekend;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+22-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+05-Jan-25;Rina;31;Perempuan;Ibu Rumah Tangga;Weekend;Gayung;Peralatan Dapur;1;Pcs;Lion Star;10.000;10.000
+06-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekend;Ember;Peralatan Dapur;1;Pcs;Lion Star;55.000;55.000
+15-Jan-25;Indah;47;Perempuan;Ibu Rumah Tangga;Weekday;Gayung;Peralatan Dapur;2;Pcs;Vinoda;7.000;14.000
+03-Feb-25;Budi;45;Laki-laki;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+08-Jan-25;Nur;34;Perempuan;Ibu Rumah Tangga;Weekday;Keranjang Sampah;Peralatan Dapur;1;Meter;GM;18.000;18.000
+05-Jan-25;Arif;33;Laki-laki;Teknisi;Weekend;Kabel;Elektronik;10;Pcs;Tonn;5.000;50.000
+05-Jan-25;Eka;30;Perempuan;Ibu Rumah Tangga;Weekend;Keset Kaki;Peralatan Dapur;4;Pcs;Tidak Ada Merk;7.000;28.000
+02-Jan-25;Melati;38;Perempuan;Ibu Rumah Tangga;Weekday;Kuningan Kompor;Peralatan Dapur;1;Pcs;Rinnai;35.000;35.000
+01-Jan-25;Nicholas;44;Laki-laki;Pekerja Pabrik;Weekday;Elbow ;Perkakas;12;Pcs;Cross;5.000;60.000
+01-Jan-25;Reyhan;41;Laki-laki;Pekerja Pabrik;Weekday;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+07-Jan-25;Bambang;43;Laki-laki;Pekerja Pabrik;Weekday;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+18-Jan-25;Lestari;23;Perempuan;Pelajar/Mahasiswa;Weekday;Hanger;Perlengkapan Rumah;1;Kg;My Sun;10.000;10.000
+09-Jan-25;Reni;30;Perempuan;Ibu Rumah Tangga;Weekday;Panci;Peralatan Dapur;1;Pcs;Muliya;30.000;30.000
+17-Jan-25;Nur;34;Perempuan;Ibu Rumah Tangga;Weekday;Panci;Peralatan Dapur;1;Goni;Muliya;30.000;30.000
+03-Feb-25;Desi;37;Perempuan;Ibu Rumah Tangga;Weekday;Panci;Peralatan Dapur;1;Pcs;Muliya;30.000;30.000
+21-Jan-25;Teguh;22;Laki-laki;Pelajar/Mahasiswa;Weekday;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;10.000;10.000
+13-Jan-25;Nicholas;19;Laki-laki;Pelajar/Mahasiswa;Weekend;Hanger ;Perlengkapan Rumah;1;Pcs;Yuwei;10.000;10.000
+14-Jan-25;Rizky;43;Laki-laki;Pekerja Pabrik;Weekday;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+15-Jan-25;Lestari;23;Perempuan;Pelajar/Mahasiswa;Weekday;Hanger ;Perlengkapan Rumah;1;Pcs;Yuwei;10.000;10.000
+15-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+20-Jan-25;Bayu;43;Laki-laki;Pekerja Pabrik;Weekend;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+24-Jan-25;Reni;30;Perempuan;Ibu Rumah Tangga;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;30.000;30.000
+13-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekend;Gembok;Perlengkapan Rumah;5;Pcs;XP;20.000;100.000
+03-Feb-25;Indah;47;Perempuan;Ibu Rumah Tangga;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;30.000;30.000
+02-Jan-25;Dina;40;Perempuan;Ibu Rumah Tangga;Weekday;Pisau;Peralatan Dapur;1;Pcs;Dong Fang;15.000;15.000
+10-Jan-25;Yanti;21;Perempuan;Pelajar/Mahasiswa;Weekday;Jas Hujan ;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;10.000;10.000
+10-Jan-25;Adit;47;Laki-laki;Pekerja Pabrik;Weekday;Jas Hujan ;Perlengkapan Rumah;10;Pcs;Tiger Head;10.000;100.000
+13-Jan-25;Arif;45;Laki-laki;Pekerja Pabrik;Weekend;Jas Hujan ;Perlengkapan Rumah;10;Pcs;Tidak Ada Merk;10.000;100.000
+10-Jan-25;Rizky;34;Laki-laki;Karyawan Swasta;Weekday;Ember;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+06-Jan-25;Wulan;27;Perempuan;Pegawai Kantor;Weekend;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+06-Jan-25;Joko;34;Laki-laki;Teknisi;Weekend;Kabel;Elektronik;10;Pcs;Tonn;5.000;50.000
+07-Jan-25;Yulianto;35;Laki-laki;Teknisi;Weekday;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+08-Jan-25;Wulan;27;Perempuan;Pegawai Kantor;Weekday;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+21-Jan-25;Arif;39;Laki-laki;Karyawan Swasta;Weekday;Ember;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+09-Jan-25;Teguh;38;Laki-laki;Karyawan Swasta;Weekday;Ember ;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+19-Jan-25;Ayu;22;Perempuan;Pelajar/Mahasiswa;Weekend;Karpet;Perlengkapan Rumah;1;Lusin;Tidak Ada Merk;20.000;20.000
+21-Jan-25;Teguh;38;Laki-laki;Karyawan Swasta;Weekday;Ember ;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+21-Jan-25;Cahyono;42;Laki-laki;Karyawan Swasta;Weekday;Ember ;Peralatan Dapur;1;Pcs;Lion Star;55.000;55.000
+05-Jan-25;Lestari;30;Perempuan;Ibu Rumah Tangga;Weekend;Pisau;Peralatan Dapur;1;Bungkus;Dong Fang;15.000;15.000
+22-Jan-25;Teguh;38;Laki-laki;Karyawan Swasta;Weekday;Ember ;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+22-Jan-25;Reni;30;Perempuan;Ibu Rumah Tangga;Weekday;Pisau ;Peralatan Dapur;1;Pcs;Jaya Mata;20.000;20.000
+14-Jan-25;Rahmat;44;Laki-laki;Pekerja Pabrik;Weekday;Jas Hujan ;Perlengkapan Rumah;10;Pcs;Tidak Ada Merk;10.000;100.000
+07-Jan-25;Ridwan;40;Laki-laki;Pekerja Pabrik;Weekday;Jepitan Baju;Perlengkapan Rumah;6;Pcs;Lion Star;15.000;90.000
+21-Jan-25;Ratna;18;Perempuan;Pelajar/Mahasiswa;Weekday;Karpet;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;20.000;20.000
+02-Jan-25;Andi;45;Laki-laki;Pekerja Pabrik;Weekday;Karpet;Perlengkapan Rumah;3;Meter;Jordan;30.000;90.000
+17-Jan-25;Joko;44;Laki-laki;Pekerja Pabrik;Weekday;Karpet;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;30.000;120.000
+21-Jan-25;Irfan;22;Laki-laki;Pelajar/Mahasiswa;Weekday;Keranjang Sampah;Perlengkapan Rumah;1;Meter;Nice;10.000;10.000
+08-Jan-25;Gunawan;33;Laki-laki;Teknisi;Weekday;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+18-Jan-25;Maya;19;Perempuan;Pelajar/Mahasiswa;Weekday;Klem;Perkakas;5;Pcs;Tidak Ada Merk;2.000;10.000
+04-Jan-25;Joko;34;Laki-laki;Teknisi;Weekend;Kabel ;Elektronik;5;Pcs;Tidak Ada Merk;5.000;25.000
+20-Jan-25;Surya;35;Laki-laki;Teknisi;Weekend;Kabel ;Elektronik;10;Pcs;Tonn;5.000;50.000
+24-Jan-25;Ridwan;40;Laki-laki;Karyawan Swasta;Weekday;Garpu;Peralatan Dapur;4;Lusin;HS;10.000;40.000
+19-Jan-25;Indah;19;Perempuan;Pelajar/Mahasiswa;Weekend;Klem;Perkakas;5;Pcs;Tidak Ada Merk;2.000;10.000
+18-Jan-25;Fauzan;41;Laki-laki;Pekerja Pabrik;Weekday;Karpet;Perlengkapan Rumah;2;Pcs;Tidak Ada Merk;30.000;60.000
+05-Jan-25;Bila;20;Perempuan;Pelajar/Mahasiswa;Weekend;Kran;Perkakas;1;Pcs;Dcota;20.000;20.000
+24-Jan-25;Adit;37;Laki-laki;Karyawan Swasta;Weekday;Gas Portable;Peralatan Dapur;1;Pcs;Wonder Fuel;20.000;20.000
+14-Jan-25;Fauzan;40;Laki-laki;Karyawan Swasta;Weekday;Gayung;Peralatan Dapur;3;Pcs;Vinoda;15.000;45.000
+13-Jan-25;Tari;30;Perempuan;Ibu Rumah Tangga;Weekend;Pisau;Peralatan Dapur;2;Pcs;Dong Fang;15.000;30.000
+18-Jan-25;Teguh;42;Laki-laki;Pekerja Pabrik;Weekday;Karpet;Perlengkapan Rumah;2;Meter;Tidak Ada Merk;30.000;60.000
+20-Jan-25;Rizky;34;Laki-laki;Karyawan Swasta;Weekend;Gayung;Peralatan Dapur;3;Pcs;Lion Star;10.000;30.000
+21-Jan-25;Fajar;35;Laki-laki;Karyawan Swasta;Weekday;Gayung;Peralatan Dapur;3;Pcs;Lion Star;10.000;30.000
+09-Jan-25;Lina;22;Perempuan;Pelajar/Mahasiswa;Weekday;Kran;Perkakas;1;Pcs;Tidak Ada Merk;15.000;15.000
+03-Jan-25;Hendra;42;Laki-laki;Pekerja Pabrik;Weekday;Karpet ;Perlengkapan Rumah;2;Pcs;Jordan;30.000;60.000
+05-Jan-25;Irfan;35;Laki-laki;Karyawan Swasta;Weekend;Jepitan Bakaran;Peralatan Dapur;1;Pcs;Tidak Ada Merk;60.000;60.000
+05-Jan-25;Banu;42;Laki-laki;Pekerja Pabrik;Weekend;Klem;Perkakas;4;Bungkus;Tidak Ada Merk;15.000;60.000
+01-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekday;Jepitan Bakaran ;Peralatan Dapur;1;Pcs;Tidak Ada Merk;60.000;60.000
+03-Jan-25;Gilang;34;Laki-laki;Karyawan Swasta;Weekday;Karpet ;Peralatan Dapur;2;Meter;Tidak Ada Merk;25.000;50.000
+03-Feb-25;Heri;34;Laki-laki;Karyawan Swasta;Weekday;Keranjang Sampah;Peralatan Dapur;2;Pcs;GM;25.000;50.000
+03-Jan-25;Ardi;32;Laki-laki;Karyawan Swasta;Weekday;Keset Kaki;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+11-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Klem;Perkakas;4;Bungkus;Tidak Ada Merk;15.000;60.000
+14-Jan-25;Citra;20;Perempuan;Pelajar/Mahasiswa;Weekday;Kuas ;Perkakas;3;Pcs;Joker;5.000;15.000
+05-Jan-25;Fauzan;40;Laki-laki;Karyawan Swasta;Weekend;Kuningan Kompor;Peralatan Dapur;2;Pcs;rinnai;20.000;40.000
+06-Jan-25;Andi;35;Laki-laki;Karyawan Swasta;Weekday;Kuningan Kompor;Peralatan Dapur;2;Pcs;rinnai;20.000;40.000
+03-Jan-25;Fani;30;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Sunny;25.000;25.000
+20-Jan-25;Reni;25;Perempuan;Pegawai Kantor;Weekend;Kabel ;Elektronik;5;Pcs;Tonn;5.000;25.000
+09-Jan-25;Bambang;33;Laki-laki;Teknisi;Weekday;Kalkulator;Elektronik;1;Pcs;Citizen;35.000;35.000
+17-Jan-25;Andi;35;Laki-laki;Teknisi;Weekday;Kalkulator;Elektronik;1;Pcs;Citizen;35.000;35.000
+01-Jan-25;Dewi;25;Perempuan;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+01-Jan-25;Reyhan;31;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+05-Jan-25;Cahyono;32;Laki-laki;Teknisi;Weekend;Lampu LED;Elektronik;2;Pcs;Potens;30.000;60.000
+07-Jan-25;Yusuf;37;Laki-laki;Karyawan Swasta;Weekday;Kuningan Kompor;Peralatan Dapur;2;Pcs;rinnai;20.000;40.000
+05-Jan-25;Citra;20;Perempuan;Pelajar/Mahasiswa;Weekend;Lem Lilin;Perkakas;3;Botol;Tidak Ada Merk;5.000;15.000
+14-Jan-25;Gilang;41;Laki-laki;Pekerja Pabrik;Weekday;Klem;Perkakas;4;Bungkus;Tidak Ada Merk;15.000;60.000
+23-Jan-25;Bambang;33;Laki-laki;Karyawan Swasta;Weekday;Mancis;Peralatan Dapur;2;Pcs;ICO Lighter;15.000;30.000
+08-Jan-25;Nur;24;Perempuan;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+08-Jan-25;Tari;26;Perempuan;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+09-Jan-25;Melati;35;Perempuan;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+05-Jan-25;Ridwan;40;Laki-laki;Karyawan Swasta;Weekend;Panci;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+08-Jan-25;Rina;31;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+09-Jan-25;Melati;38;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+12-Jan-25;Teguh;34;Laki-laki;Teknisi;Weekend;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+20-Jan-25;Rudi;42;Laki-laki;Pekerja Pabrik;Weekend;Klem ;Perkakas;5;Bungkus;Tidak Ada Merk;15.000;75.000
+01-Jan-25;Rina;21;Perempuan;Pelajar/Mahasiswa;Weekday;Meteran;Perkakas;1;Pcs;K-TE;20.000;20.000
+02-Jan-25;Gunawan;43;Laki-laki;Pekerja Pabrik;Weekday;Klem ;Perkakas;4;Pcs;Tidak Ada Merk;20.000;80.000
+17-Jan-25;Yusuf;41;Laki-laki;Pekerja Pabrik;Weekday;Kran;Perkakas;4;Pcs;Tidak Ada Merk;20.000;80.000
+14-Jan-25;Yanti;30;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Nagata;45.000;45.000
+05-Jan-25;Bambang;43;Laki-laki;Pekerja Pabrik;Weekend;Kran ;Perkakas;3;Pcs;Tidak Ada Merk;20.000;60.000
+15-Jan-25;Maya;39;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+05-Jan-25;Wulan;23;Perempuan;Pelajar/Mahasiswa;Weekend;Paku;Perkakas;1;Bungkus;Tidak Ada Merk;20.000;20.000
+16-Jan-25;Tari;30;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Sunny;25.000;25.000
+10-Jan-25;Hendra;38;Laki-laki;Karyawan Swasta;Weekday;Panci;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+14-Jan-25;Bagas;34;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+05-Jan-25;Nicholas;44;Laki-laki;Pekerja Pabrik;Weekend;Kran ;Perkakas;2;Pcs;Dcota;25.000;50.000
+02-Jan-25;Melati;22;Perempuan;Pelajar/Mahasiswa;Weekday;Paku ;Perkakas;1;Bungkus;Tidak Ada Merk;20.000;20.000
+17-Jan-25;Rina;31;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Suxing;50.000;50.000
+17-Jan-25;Yanti;30;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;pcs;Tidak Ada Merk;15.000;15.000
+04-Jan-25;Surya;42;Laki-laki;Karyawan Swasta;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+23-Jan-25;Ridwan;40;Laki-laki;Pekerja Pabrik;Weekday;Kran ;Perkakas;4;Pcs;XP;15.000;60.000
+01-Jan-25;Bayu;43;Laki-laki;Pekerja Pabrik;Weekday;Kuas;Perkakas;12;Botol;Joker;5.000;60.000
+05-Jan-25;Ratna;21;Perempuan;Pelajar/Mahasiswa;Weekend;Payung ;Perlengkapan Rumah;1;Roll;Tidak Ada Merk;15.000;15.000
+11-Jan-25;Samsul;22;Laki-laki;Pelajar/Mahasiswa;Weekday;Payung ;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;15.000;15.000
+14-Jan-25;Reyhan;31;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+01-Jan-25;Agus;43;Laki-laki;Pekerja Pabrik;Weekday;Kuas;Perkakas;12;Pcs;Joker;5.000;60.000
+18-Jan-25;Yulia;40;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Nagata;45.000;45.000
+12-Jan-25;Irfan;42;Laki-laki;Pekerja Pabrik;Weekend;Kuas ;Perkakas;12;Pcs;Joker;5.000;60.000
+14-Jan-25;Hendra;38;Laki-laki;Karyawan Swasta;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+20-Jan-25;Rahmat;37;Laki-laki;Karyawan Swasta;Weekend;Panci ;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+22-Jan-25;Joko;37;Laki-laki;Karyawan Swasta;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+03-Feb-25;Nina;40;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Nagata;45.000;45.000
+01-Jan-25;Yosef;35;Laki-laki;Karyawan Swasta;Weekday;Perangkap Tikus;Peralatan Dapur;3;Pcs;Tidak Ada Merk;25.000;75.000
+05-Jan-25;Gina;19;Perempuan;Pelajar/Mahasiswa;Weekend;Pot;Perlengkapan Rumah;1;Pcs;CJP;25.000;25.000
+05-Jan-25;Arfin;41;Laki-laki;Pekerja Pabrik;Weekend;Mata Gerinda;Perkakas;4;Pcs;Tidak Ada Merk;15.000;60.000
+12-Jan-25;Hendra;42;Laki-laki;Pekerja Pabrik;Weekend;Obeng;Perkakas;5;Pcs;Tidak Ada Merk;10.000;50.000
+08-Jan-25;Desi;21;Perempuan;Pelajar/Mahasiswa;Weekday;Pot;Perlengkapan Rumah;1;Pcs;CJP;25.000;25.000
+09-Jan-25;Dina;19;Perempuan;Pelajar/Mahasiswa;Weekday;Pot;Perlengkapan Rumah;1;Pcs;GM;25.000;25.000
+05-Jan-25;Budi;45;Laki-laki;Pekerja Pabrik;Weekend;Paku;Perkakas;4;Bungkus;Tidak Ada Merk;15.000;60.000
+14-Jan-25;Reyhan;41;Laki-laki;Pekerja Pabrik;Weekday;Paku ;Perkakas;3;Bungkus;Tidak Ada Merk;15.000;45.000
+20-Jan-25;William;42;Laki-laki;Pekerja Pabrik;Weekend;Paku ;Perkakas;5;Bungkus;Tidak Ada Merk;15.000;75.000
+20-Jan-25;Irfan;42;Laki-laki;Pekerja Pabrik;Weekend;Paku ;Perkakas;3;Bungkus;Tidak Ada Merk;15.000;45.000
+04-Jan-25;Yulia;40;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;1;Pcs;Nagata;45.000;45.000
+24-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekday;Pisau;Peralatan Dapur;2;Pcs;Troy;20.000;40.000
+05-Jan-25;Lina;46;Perempuan;Ibu Rumah Tangga;Weekend;Sapu ;Peralatan Dapur;1;Pcs;Shun Hong;25.000;25.000
+05-Jan-25;Budi;45;Laki-laki;Pekerja Pabrik;Weekend;Polybag;Perlengkapan Rumah;6;Bungkus;Tidak Ada Merk;20.000;120.000
+11-Jan-25;Nina;21;Perempuan;Pelajar/Mahasiswa;Weekday;Pot;Perlengkapan Rumah;2;Pcs;Mio;25.000;50.000
+07-Jan-25;Ardi;32;Laki-laki;Karyawan Swasta;Weekday;Pisau ;Peralatan Dapur;2;Pcs;Dong Fang;15.000;30.000
+13-Jan-25;Dina;19;Perempuan;Pelajar/Mahasiswa;Weekday;Pot;Perlengkapan Rumah;2;Pcs;GM;25.000;50.000
+06-Jan-25;Eko;45;Laki-laki;Pekerja Pabrik;Weekday;Polybag;Perlengkapan Rumah;6;Bungkus;Tidak Ada Merk;20.000;120.000
+17-Jan-25;Joko;44;Laki-laki;Pekerja Pabrik;Weekday;Polybag;Perlengkapan Rumah;3;Bungkus;Tidak Ada Merk;20.000;60.000
+23-Jan-25;Dani;42;Laki-laki;Pekerja Pabrik;Weekday;Polybag ;Perlengkapan Rumah;4;Bungkus;Tidak Ada Merk;20.000;80.000
+05-Jan-25;Nicholas;44;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;3;Bungkus;GM;25.000;75.000
+05-Jan-25;Fauzan;41;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;3;Pcs;CJP;25.000;75.000
+05-Jan-25;Bambang;43;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;3;Pcs;CJP;25.000;75.000
+19-Jan-25;Yanti;21;Perempuan;Pelajar/Mahasiswa;Weekend;Pot ;Perlengkapan Rumah;1;Pcs;GM;25.000;25.000
+06-Jan-25;Gilang;41;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Kg;GM;25.000;75.000
+07-Jan-25;Budi;45;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;Mio;25.000;75.000
+15-Jan-25;Gunawan;33;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;2;Pcs;Tidak Ada Merk;25.000;50.000
+20-Jan-25;Rahmat;37;Laki-laki;Karyawan Swasta;Weekend;Pisau ;Peralatan Dapur;2;Pcs;Dong Fang;15.000;30.000
+03-Feb-25;Yusuf;37;Laki-laki;Karyawan Swasta;Weekday;Pisau ;Peralatan Dapur;2;Pcs;Dong Fang;15.000;30.000
+08-Jan-25;Teguh;42;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;GM;25.000;75.000
+02-Jan-25;Adit;37;Laki-laki;Karyawan Swasta;Weekday;Regulator;Peralatan Dapur;1;Pcs;Winn Gas;80.000;80.000
+02-Jan-25;Nicholas;36;Laki-laki;Karyawan Swasta;Weekday;Regulator;Peralatan Dapur;1;Pcs;Hipro;70.000;70.000
+09-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;Mio;25.000;75.000
+09-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;Mio;25.000;75.000
+09-Jan-25;Teguh;42;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;GM;25.000;75.000
+10-Jan-25;William;42;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;2;Pcs;Mio;25.000;50.000
+10-Jan-25;Eko;45;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;2;Pcs;Mio;25.000;50.000
+05-Jan-25;Dinia;32;Perempuan;Ibu Rumah Tangga;Weekend;Sapu ;Peralatan Dapur;1;Pcs;Shun Hong;25.000;25.000
+08-Jan-25;Irfan;35;Laki-laki;Karyawan Swasta;Weekday;Regulator;Peralatan Dapur;1;Pcs;Destec;90.000;90.000
+11-Jan-25;Joko;44;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;GM;25.000;75.000
+06-Jan-25;Nur;34;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;1;Goni;Shun Hong;25.000;25.000
+12-Jan-25;Yosef;41;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;2;Pcs;Mio;25.000;50.000
+08-Jan-25;Dina;40;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Shun Hong;25.000;50.000
+18-Jan-25;Andi;35;Laki-laki;Karyawan Swasta;Weekday;Regulator;Peralatan Dapur;1;Pcs;Destec;90.000;90.000
+08-Jan-25;Desi;37;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;1;Pcs;Shun Hong;25.000;25.000
+12-Jan-25;Rizky;43;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;3;Pcs;GM;25.000;75.000
+14-Jan-25;Bagas;43;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;2;Pcs;GM;25.000;50.000
+18-Jan-25;Nicholas;44;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Goni;CJP;25.000;75.000
+17-Jan-25;Desi;21;Perempuan;Pelajar/Mahasiswa;Weekday;Sapu;Perlengkapan Rumah;2;Pcs;Tidak Ada Merk;13.000;26.000
+24-Jan-25;Reni;20;Perempuan;Pelajar/Mahasiswa;Weekday;Sapu ;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;13.000;13.000
+03-Feb-25;Bayu;43;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;2;Pcs;GM;25.000;50.000
+11-Jan-25;Tari;19;Perempuan;Pelajar/Mahasiswa;Weekend;Sarung tangan ;Perkakas;1;Pcs;Sun;10.000;10.000
+22-Jan-25;Andi;45;Laki-laki;Pekerja Pabrik;Weekday;Pot ;Perlengkapan Rumah;2;Pcs;GM;25.000;50.000
+20-Jan-25;Bayu;40;Laki-laki;Karyawan Swasta;Weekend;Regulator ;Peralatan Dapur;1;Pcs;Hipro;70.000;70.000
+03-Feb-25;Irfan;42;Laki-laki;Pekerja Pabrik;Weekday;Pot ;Perlengkapan Rumah;2;Goni;Mio;25.000;50.000
+01-Jan-25;Bayu;40;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Shun Hong;25.000;50.000
+05-Jan-25;Andi;35;Laki-laki;Karyawan Swasta;Weekend;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+10-Jan-25;Melati;38;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;2;Goni;Shun Hong;25.000;50.000
+05-Jan-25;Dina;19;Perempuan;Pelajar/Mahasiswa;Weekend;Seal Tape;Perkakas;5;Pcs;Dcota;5.000;25.000
+15-Jan-25;Samsul;36;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+11-Jan-25;Ardi;32;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+16-Jan-25;Yusuf;34;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+05-Jan-25;Surya;45;Laki-laki;Pekerja Pabrik;Weekend;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+12-Jan-25;Fajar;35;Laki-laki;Karyawan Swasta;Weekend;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+11-Jan-25;Maya;39;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Shun Hong;25.000;50.000
+06-Jan-25;Dani;42;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;3;Meter;Tidak Ada Merk;20.000;60.000
+07-Jan-25;William;42;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+10-Jan-25;Dani;42;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+12-Jan-25;Arif;39;Laki-laki;Karyawan Swasta;Weekend;Sapu;Peralatan Dapur;2;Pcs;Sunny;25.000;50.000
+13-Jan-25;Tono;33;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+11-Jan-25;Dani;42;Laki-laki;Pekerja Pabrik;Weekend;Sapu;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+16-Jan-25;Wulan;27;Perempuan;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+19-Jan-25;Lina;46;Perempuan;Ibu Rumah Tangga;Weekend;Sapu ;Peralatan Dapur;1;Goni;Suxing;50.000;50.000
+21-Jan-25;Citra;30;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+12-Jan-25;Irfan;42;Laki-laki;Pekerja Pabrik;Weekend;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+16-Jan-25;Bagas;34;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+13-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekend;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+14-Jan-25;Reyhan;36;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+16-Jan-25;Teguh;34;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+21-Jan-25;Citra;30;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;1;Pcs;Suxing;50.000;50.000
+01-Jan-25;Siti;32;Perempuan;Ibu Rumah Tangga;Weekday;Sendok;Peralatan Dapur;1;Lusin;HS;10.000;10.000
+16-Jan-25;Teguh;35;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+16-Jan-25;Andi;35;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+14-Jan-25;Yanto;43;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+16-Jan-25;Nicholas;36;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;pcs;Potens;30.000;30.000
+19-Jan-25;Wulan;27;Perempuan;Pegawai Kantor;Weekend;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+20-Jan-25;Maya;30;Perempuan;Pegawai Kantor;Weekend;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+14-Jan-25;Agus;43;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Sunny;25.000;50.000
+14-Jan-25;Yusuf;41;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+20-Jan-25;Irfan;32;Laki-laki;Teknisi;Weekend;Lampu LED;Elektronik;1;Goni;Potens;30.000;30.000
+18-Jan-25;William;42;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+22-Jan-25;Teguh;35;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+01-Jan-25;Reyhan;31;Laki-laki;Teknisi;Weekday;Plug;Elektronik;2;Pcs;Visalux;20.000;40.000
+05-Jan-25;Desi;21;Perempuan;Pelajar/Mahasiswa;Weekend;Sekam;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;10.000;10.000
+19-Jan-25;Rudi;42;Laki-laki;Pekerja Pabrik;Weekend;Sapu ;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+15-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+16-Jan-25;Teguh;38;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+03-Jan-25;Dita;40;Perempuan;Ibu Rumah Tangga;Weekday;Sendok;Peralatan Dapur;2;Lusin;HS;10.000;20.000
+20-Jan-25;Cahyono;42;Laki-laki;Pekerja Pabrik;Weekend;Sapu ;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+23-Jan-25;Andi;35;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Sunny;25.000;50.000
+07-Jan-25;Irfan;35;Laki-laki;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Dato;30.000;60.000
+21-Jan-25;Fajar;41;Laki-laki;Pekerja Pabrik;Weekday;Sapu ;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+23-Jan-25;Agus;43;Laki-laki;Pekerja Pabrik;Weekday;Sapu ;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+04-Jan-25;Fajar;41;Laki-laki;Pekerja Pabrik;Weekday;Sarung Tangan;Perkakas;12;Meter;Tidak Ada Merk;10.000;120.000
+04-Jan-25;Lestari;30;Perempuan;Ibu Rumah Tangga;Weekend;Sendok;Peralatan Dapur;2;Lusin;HS;10.000;20.000
+17-Jan-25;Nina;40;Perempuan;Ibu Rumah Tangga;Weekday;Sendok;Peralatan Dapur;1;Lusin;HS;10.000;10.000
+02-Jan-25;Maya;39;Perempuan;Ibu Rumah Tangga;Weekday;Sendok ;Peralatan Dapur;1;Lusin;Diamond;15.000;15.000
+05-Jan-25;Bambang;33;Laki-laki;Teknisi;Weekend;Plug;Elektronik;1;Pcs;Visalux;20.000;20.000
+05-Jan-25;Nur;23;Perempuan;Pelajar/Mahasiswa;Weekend;Sekam;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;10.000;10.000
+04-Jan-25;Dini;43;Perempuan;Ibu Rumah Tangga;Weekend;Sendok ;Peralatan Dapur;3;Lusin;HS;10.000;30.000
+12-Jan-25;Agus;43;Laki-laki;Pekerja Pabrik;Weekend;Sarung tangan ;Perkakas;12;Pcs;Sun;10.000;120.000
+14-Jan-25;Fitri;22;Perempuan;Pelajar/Mahasiswa;Weekday;Selang;Perkakas;1;Pcs;Tidak Ada Merk;20.000;20.000
+09-Jan-25;Gilang;41;Laki-laki;Pekerja Pabrik;Weekday;Seal Tape;Perkakas;6;Pcs;Dcota;15.000;90.000
+15-Jan-25;Dani;37;Laki-laki;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+16-Jan-25;Wulan;44;Perempuan;Ibu Rumah Tangga;Weekday;Sendok ;Peralatan Dapur;1;Lusin;Diamond;15.000;15.000
+13-Jan-25;Dewi;45;Perempuan;Ibu Rumah Tangga;Weekend;Serbet ;Peralatan Dapur;2;Pcs;Aneka Produksi;6.000;12.000
+02-Jan-25;Siti;22;Perempuan;Pelajar/Mahasiswa;Weekday;Sikat;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;10.000;10.000
+17-Jan-25;Joko;44;Laki-laki;Pekerja Pabrik;Weekday;Seal Tape;Perkakas;6;Pcs;Dcota;15.000;90.000
+19-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekend;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+19-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekend;Sapu ;Peralatan Dapur;2;Pcs;Nagata;35.000;70.000
+23-Jan-25;Yosef;19;Laki-laki;Pekerja Pabrik;Weekday;Seal Tape;Perkakas;4;Pcs;Dcota;15.000;60.000
+07-Jan-25;Ardi;42;Laki-laki;Pekerja Pabrik;Weekday;Sekam;Perlengkapan Rumah;12;Pcs;Tidak Ada Merk;10.000;120.000
+18-Jan-25;Nur;23;Perempuan;Pelajar/Mahasiswa;Weekend;Sikat;Perlengkapan Rumah;1;Pcs;Nagata;10.000;10.000
+20-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekend;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+03-Feb-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Sekam;Perlengkapan Rumah;12;Pcs;Tidak Ada Merk;10.000;120.000
+07-Jan-25;Rizky;32;Laki-laki;Teknisi;Weekday;Plug;Elektronik;2;Pcs;Visalux;20.000;40.000
+19-Jan-25;Yanto;43;Laki-laki;Pekerja Pabrik;Weekend;Sekam ;Perlengkapan Rumah;12;Pcs;Tidak Ada Merk;10.000;120.000
+20-Jan-25;Gunawan;33;Laki-laki;Karyawan Swasta;Weekend;Sapu ;Peralatan Dapur;2;Pcs;Sunny;25.000;50.000
+02-Jan-25;Adit;47;Laki-laki;Pekerja Pabrik;Weekday;Selang;Perkakas;6;Meter;Tidak Ada Merk;20.000;120.000
+02-Jan-25;Joko;44;Laki-laki;Pekerja Pabrik;Weekday;Sikat;Perlengkapan Rumah;6;Pcs;Tidak Ada Merk;10.000;60.000
+08-Jan-25;Ridwan;40;Laki-laki;Pekerja Pabrik;Weekday;Sikat;Perlengkapan Rumah;5;Pcs;Nagata;10.000;50.000
+24-Jan-25;Ridwan;32;Laki-laki;Teknisi;Weekday;Plug;Elektronik;2;Pcs;Visalux;20.000;40.000
+08-Jan-25;William;42;Laki-laki;Pekerja Pabrik;Weekday;Sikat;Perlengkapan Rumah;6;Pcs;Tidak Ada Merk;10.000;60.000
+08-Jan-25;Gunawan;43;Laki-laki;Pekerja Pabrik;Weekday;Sikat;Perlengkapan Rumah;6;Pcs;Tidak Ada Merk;10.000;60.000
+19-Jan-25;Ratna;18;Perempuan;Pelajar/Mahasiswa;Weekend;Sikat;Perlengkapan Rumah;1;Meter;Nagata;10.000;10.000
+19-Jan-25;Reyhan;41;Laki-laki;Pekerja Pabrik;Weekend;Sikat;Perlengkapan Rumah;6;Pcs;Tidak Ada Merk;10.000;60.000
+05-Jan-25;Dina;19;Perempuan;Pelajar/Mahasiswa;Weekend;Sikat ;Perlengkapan Rumah;1;Pcs;Dato;10.000;10.000
+22-Jan-25;Reyhan;36;Laki-laki;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+23-Jan-25;Agus;43;Laki-laki;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+21-Jan-25;Dewi;45;Perempuan;Ibu Rumah Tangga;Weekday;Serbet ;Peralatan Dapur;2;Pcs;Aneka Produksi;6.000;12.000
+07-Jan-25;Nina;40;Perempuan;Ibu Rumah Tangga;Weekday;Skop ;Perkakas;2;Pcs;Klintex;15.000;30.000
+13-Jan-25;Lestari;23;Perempuan;Pelajar/Mahasiswa;Weekend;Sikat ;Perlengkapan Rumah;1;Pcs;Nagoya;10.000;10.000
+24-Jan-25;Dani;42;Laki-laki;Pekerja Pabrik;Weekday;Sikat ;Perlengkapan Rumah;5;Pcs;Tidak Ada Merk;10.000;50.000
+21-Jan-25;Yulianto;40;Laki-laki;Pekerja Pabrik;Weekday;Sikat ;Perlengkapan Rumah;6;Bungkus;Dato;12.000;72.000
+12-Jan-25;Agus;43;Laki-laki;Pekerja Pabrik;Weekend;Skop;Perkakas;5;Pcs;Klintex;15.000;75.000
+23-Jan-25;William;34;Laki-laki;Teknisi;Weekday;Plug ;Elektronik;2;Pcs;Visalux;20.000;40.000
+01-Jan-25;Teguh;34;Laki-laki;Teknisi;Weekday;Saklar;Elektronik;1;Pcs;Visalux;25.000;25.000
+07-Jan-25;Eko;35;Laki-laki;Teknisi;Weekday;Socket ;Elektronik;1;Pcs;Visalux;30.000;30.000
+23-Jan-25;Rizky;32;Laki-laki;Teknisi;Weekday;Socket ;Elektronik;1;Pcs;Visalux;30.000;30.000
+24-Jan-25;Eko;35;Laki-laki;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;1;Pcs;Nagata;35.000;35.000
+01-Jan-25;Reyhan;41;Laki-laki;Pekerja Pabrik;Weekday;Skrap;Perkakas;5;Bungkus;Gladio;15.000;75.000
+24-Jan-25;Wulan;27;Perempuan;Pegawai Kantor;Weekday;Socket ;Elektronik;1;Pcs;Visalux;20.000;20.000
+08-Jan-25;Surya;35;Laki-laki;Teknisi;Weekday;Stop Kontak;Elektronik;1;Pcs;Visalux;25.000;25.000
+12-Jan-25;Fauzan;40;Laki-laki;Karyawan Swasta;Weekend;Saringan;Peralatan Dapur;2;Pcs;PUP;10.000;20.000
+17-Jan-25;Rizky;34;Laki-laki;Karyawan Swasta;Weekday;Saringan;Peralatan Dapur;2;Pcs;PUP;10.000;20.000
+09-Jan-25;Lina;22;Perempuan;Pelajar/Mahasiswa;Weekday;Tali tambang;Perkakas;2;Pcs;Tidak Ada Merk;15.000;30.000
+17-Jan-25;Rudi;36;Laki-laki;Karyawan Swasta;Weekday;Selang Gas;Peralatan Dapur;1;Pcs;Quantum;100.000;100.000
+07-Jan-25;Yusuf;37;Laki-laki;Karyawan Swasta;Weekday;Sendok;Peralatan Dapur;3;Lusin;HS;10.000;30.000
+18-Jan-25;Irfan;35;Laki-laki;Karyawan Swasta;Weekday;Sendok;Peralatan Dapur;2;Lusin;HS;10.000;20.000
+20-Jan-25;Bagas;34;Laki-laki;Karyawan Swasta;Weekend;Sendok;Peralatan Dapur;1;Lusin;Diamond;20.000;20.000
+11-Jan-25;Yulianto;40;Laki-laki;Pekerja Pabrik;Weekday;Tali Tambang ;Perkakas;3;Pcs;Tidak Ada Merk;25.000;75.000
+24-Jan-25;Surya;42;Laki-laki;Karyawan Swasta;Weekday;Sendok ;Peralatan Dapur;2;Lusin;HS;10.000;20.000
+13-Jan-25;Gilang;41;Laki-laki;Pekerja Pabrik;Weekend;Tali Tambang ;Perkakas;2;Pcs;Tidak Ada Merk;25.000;50.000
+06-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekend;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+07-Jan-25;Hendra;38;Laki-laki;Karyawan Swasta;Weekday;Sendok;Peralatan Dapur;2;Lusin;XP;15.000;30.000
+09-Jan-25;Nur;34;Perempuan;Ibu Rumah Tangga;Weekday;Skop ;Perkakas;2;Pcs;Klintex;15.000;30.000
+08-Jan-25;Teguh;42;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+06-Jan-25;Gunawan;33;Laki-laki;Karyawan Swasta;Weekday;Serbet;Peralatan Dapur;1;Pcs;Aneka Produksi;15.000;15.000
+24-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekday;Serbet ;Peralatan Dapur;1;Pcs;Aneka Produksi;15.000;15.000
+23-Jan-25;Adit;37;Laki-laki;Karyawan Swasta;Weekday;Sikat ;Peralatan Dapur;1;Pcs;dato;20.000;20.000
+09-Jan-25;Reyhan;41;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+11-Jan-25;Rina;31;Perempuan;Ibu Rumah Tangga;Weekday;Spon;Peralatan Dapur;2;Pcs;Susemi;7.000;14.000
+12-Jan-25;Hendra;42;Laki-laki;Pekerja Pabrik;Weekend;Tanah Campur;Perlengkapan Rumah;5;Pcs;Tidak Ada Merk;20.000;100.000
+24-Jan-25;Rina;31;Perempuan;Ibu Rumah Tangga;Weekday;Spon;Peralatan Dapur;3;Goni;Susemi;7.000;21.000
+11-Jan-25;Tari;19;Perempuan;Pelajar/Mahasiswa;Weekday;Tali Tambang ;Perkakas;1;Pcs;Tidak Ada Merk;15.000;15.000
+13-Jan-25;Siti;32;Perempuan;Ibu Rumah Tangga;Weekday;Spon ;Peralatan Dapur;2;Pcs;Susemi;7.000;14.000
+08-Jan-25;Bagas;34;Laki-laki;Karyawan Swasta;Weekday;Skop;Perkakas;2;Pcs;Klintex;15.000;30.000
+13-Jan-25;Wulan;44;Perempuan;Ibu Rumah Tangga;Weekend;Tampi;Peralatan Dapur;2;Pcs;Manau;10.000;20.000
+07-Jan-25;Bayu;40;Laki-laki;Karyawan Swasta;Weekday;Solet Karet;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+10-Jan-25;Ardi;32;Laki-laki;Karyawan Swasta;Weekday;Spon ;Peralatan Dapur;5;Pcs;Scotch Brite;10.000;50.000
+18-Jan-25;Gunawan;33;Laki-laki;Karyawan Swasta;Weekday;Spon ;Peralatan Dapur;5;Pcs;Susemi;10.000;50.000
+05-Jan-25;Wulan;19;Perempuan;Pelajar/Mahasiswa;Weekend;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+16-Jan-25;Gunawan;43;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+17-Jan-25;Budi;45;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+02-Jan-25;Budi;37;Laki-laki;Karyawan Swasta;Weekday;Sumbu Kompor;Peralatan Dapur;3;Bungkus;Hock;15.000;45.000
+02-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekday;Tampi;Peralatan Dapur;2;Pcs;Manau;15.000;30.000
+08-Jan-25;Rudi;32;Laki-laki;Teknisi;Weekday;Stop Kontak;Elektronik;1;Pcs;Visalux;25.000;25.000
+17-Jan-25;Arif;39;Laki-laki;Karyawan Swasta;Weekday;Tampi;Peralatan Dapur;2;Pcs;Manau;15.000;30.000
+17-Jan-25;Nicholas;36;Laki-laki;Karyawan Swasta;Weekday;Tampi;Peralatan Dapur;2;Pcs;Manau;15.000;30.000
+06-Jan-25;Indah;22;Perempuan;Pelajar/Mahasiswa;Weekend;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+18-Jan-25;William;42;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+16-Jan-25;Teguh;35;Laki-laki;Teknisi;Weekday;Stop Kontak;Elektronik;1;Pcs;Visalux;25.000;25.000
+22-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+03-Feb-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+03-Feb-25;Eko;45;Laki-laki;Pekerja Pabrik;Weekday;Taplak Meja ;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;30.000;90.000
+01-Jan-25;Yulianto;35;Laki-laki;Teknisi;Weekday;Stop Kontak ;Elektronik;1;Pcs;Visalux;25.000;25.000
+14-Jan-25;Maya;19;Perempuan;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+03-Feb-25;Fajar;35;Laki-laki;Karyawan Swasta;Weekday;Tampi ;Peralatan Dapur;2;Pcs;Manau;15.000;30.000
+03-Jan-25;Eko;35;Laki-laki;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;2;Pcs;Shinpo;25.000;50.000
+07-Jan-25;Bayu;40;Laki-laki;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+05-Jan-25;Dina;40;Perempuan;Ibu Rumah Tangga;Weekend;Tanah Campur;Pupuk;1;Pcs;Tidak Ada Merk;35.000;35.000
+02-Jan-25;Siti;32;Perempuan;Ibu Rumah Tangga;Weekday;Taplak Meja;Peralatan Dapur;2;Pcs;Tidak Ada Merk;14.000;28.000
+03-Jan-25;Bella;38;Perempuan;Ibu Rumah Tangga;Weekday;Taplak Meja;Peralatan Dapur;4;Pcs;Tidak Ada Merk;14.000;56.000
+08-Jan-25;Ardi;32;Laki-laki;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+16-Jan-25;Yulia;19;Perempuan;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+05-Jan-25;Citra;30;Perempuan;Ibu Rumah Tangga;Weekend;Tempat Bakaran ;Peralatan Dapur;1;Pcs;Tidak Ada Merk;35.000;35.000
+09-Jan-25;Andi;35;Laki-laki;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+11-Jan-25;Dani;37;Laki-laki;Karyawan Swasta;Weekend;Toples;Peralatan Dapur;4;Pcs;Tidak Ada Merk;10.000;40.000
+13-Jan-25;Irfan;35;Laki-laki;Karyawan Swasta;Weekend;Toples;Peralatan Dapur;2;Pcs;Shinpo;15.000;30.000
+18-Jan-25;Surya;42;Laki-laki;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;2;Pcs;Shinpo;15.000;30.000
+18-Jan-25;Eko;35;Laki-laki;Karyawan Swasta;Weekend;Toples;Peralatan Dapur;4;Pcs;Tidak Ada Merk;10.000;40.000
+20-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekend;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+17-Jan-25;Nur;23;Perempuan;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+02-Jan-25;Desi;24;Perempuan;Pegawai Kantor;Weekday;Stop Kontak ;Elektronik;1;Pcs;Visalux;20.000;20.000
+24-Jan-25;Maya;30;Perempuan;Pegawai Kantor;Weekday;Stop Kontak ;Elektronik;1;Pcs;Visalux;20.000;20.000
+03-Feb-25;Desi;24;Perempuan;Pegawai Kantor;Weekday;Stop Kontak ;Elektronik;1;Pcs;Visalux;20.000;20.000
+18-Jan-25;Nina;21;Perempuan;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+03-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Tas ;Perlengkapan Rumah;2;Pcs;Tidak Ada Merk;25.000;50.000
+21-Jan-25;Gilang;34;Laki-laki;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+19-Jan-25;Desi;21;Perempuan;Pelajar/Mahasiswa;Weekend;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+23-Jan-25;Dewi;18;Perempuan;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+18-Jan-25;Rina;31;Perempuan;Ibu Rumah Tangga;Weekday;Toples;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+14-Jan-25;Citra;30;Perempuan;Ibu Rumah Tangga;Weekday;Toples ;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+21-Jan-25;Ratna;30;Perempuan;Ibu Rumah Tangga;Weekday;Toples ;Peralatan Dapur;3;Pcs;Tidak Ada Merk;15.000;45.000
+14-Jan-25;Yanto;34;Laki-laki;Karyawan Swasta;Weekday;Toples ;Peralatan Dapur;5;Pcs;Shinpo;15.000;75.000
+16-Jan-25;Siti;22;Perempuan;Pelajar/Mahasiswa;Weekday;Tas;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;25.000;25.000
+23-Jan-25;Rudi;42;Laki-laki;Pekerja Pabrik;Weekday;Tas ;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;25.000;75.000
+23-Jan-25;Budi;37;Laki-laki;Karyawan Swasta;Weekday;Toples ;Peralatan Dapur;4;Pcs;Tidak Ada Merk;10.000;40.000
+03-Feb-25;Dinda;18;Perempuan;Pelajar/Mahasiswa;Weekday;Tas;Perlengkapan Rumah;1;Lusin;Tidak Ada Merk;25.000;25.000
+01-Jan-25;Ridwan;40;Laki-laki;Pekerja Pabrik;Weekday;Thinner;Perkakas;4;Pcs;Tidak Ada Merk;15.000;60.000
+03-Jan-25;Dira;32;Perempuan;Ibu Rumah Tangga;Weekday;Tudung Saji ;Peralatan Dapur;1;Pcs;Lion Star;35.000;35.000
+01-Jan-25;Citra;22;Perempuan;Pegawai Kantor;Weekday;Test Pen;Elektronik;3;Pcs;Visalux;10.000;30.000
+21-Jan-25;Desi;30;Perempuan;Ibu Rumah Tangga;Weekday;Baskom;Peralatan Dapur;1;Meter;GM;20.000;20.000
+17-Jan-25;Reni;40;Perempuan;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+05-Jan-25;Fauzan;41;Laki-laki;Pekerja Pabrik;Weekend;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+10-Feb-25;Irfan;40;Laki-laki;Karyawan Swasta;Weekday;Baskom;Peralatan Dapur;1;Pcs;GM;35.000;35.000
+11-Jan-25;Andi;42;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+16-Jan-25;Yulianto;45;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+16-Feb-25;Fitri;40;Perempuan;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+10-Feb-25;Joko;41;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+14-Jan-25;Yusuf;40;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+05-Jan-25;Heri;30;Laki-laki;Pegawai Kantor;Weekday;Fitting;Elektronik;3;Pcs;Visalux;10.000;30.000
+21-Feb-25;Tono;25;Laki-laki;Pegawai Kantor;Weekday;Fitting;Elektronik;5;Pcs;Visalux;10.000;50.000
+07-Jan-25;Nur;37;Perempuan;Karyawan Swasta;Weekday;Baskom;Peralatan Dapur;1;pcs;Lion Star;35.000;35.000
+07-Jan-25;Surya;35;Laki-laki;Karyawan Swasta;Weekend;Baskom ;Peralatan Dapur;1;pcs;Lion Star;35.000;35.000
+20-Feb-25;Siti;41;Perempuan;Pekerja Pabrik;Weekend;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+17-Jan-25;Melati;22;Perempuan;Pelajar/Mahasiswa;Weekday;Celengan ;Souvenir;3;Pcs;Tidak Ada Merk;5.000;15.000
+14-Jan-25;Teguh;27;Laki-laki;Pegawai Kantor;Weekday;Fitting;Elektronik;2;Pcs;Visalux;10.000;20.000
+01-Jan-25;Yusuf;24;Laki-laki;Pegawai Kantor;Weekday;Fitting;Elektronik;2;pcs;Visalux;10.000;20.000
+28-Feb-25;Budi;30;Laki-laki;Teknisi;Weekend;Fitting ;Elektronik;5;Pcs;Visalux;4.000;20.000
+03-Feb-25;Tono;34;Laki-laki;Teknisi;Weekday;Isolasi;Elektronik;5;Pcs;Vini Tape;5.000;25.000
+23-Feb-25;Cahyono;34;Laki-laki;Teknisi;Weekend;Isolasi;Elektronik;5;Pcs;Vini Tape;5.000;25.000
+24-Jan-25;Reni;38;Perempuan;Ibu Rumah Tangga;Weekday;Baskom;Peralatan Dapur;2;Pcs;GM;20.000;40.000
+08-Feb-25;Yulianto;40;Laki-laki;Karyawan Swasta;Weekday;Baskom ;Peralatan Dapur;1;pcs;Lion Star;35.000;35.000
+07-Jan-25;Gilang;41;Laki-laki;Pekerja Pabrik;Weekend;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+17-Jan-25;Tari;44;Perempuan;Ibu Rumah Tangga;Weekday;Baskom;Peralatan Dapur;1;Goni;GM;20.000;20.000
+18-Feb-25;Bambang;37;Laki-laki;Ibu Rumah Tangga;Weekday;Baskom ;Peralatan Dapur;1;Roll;GM;20.000;20.000
+07-Jan-25;Yanti;41;Perempuan;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+14-Jan-25;Desi;20;Perempuan;Pelajar/Mahasiswa;Weekday;Gembok;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;15.000;15.000
+14-Feb-25;Surya;30;Laki-laki;Ibu Rumah Tangga;Weekday;Baskom ;Peralatan Dapur;2;Pcs;GM;20.000;40.000
+06-Feb-25;Desi;35;Perempuan;Teknisi;Weekday;Isolasi;Elektronik;5;Pcs;Vini Tape;4.000;20.000
+06-Feb-25;Surya;30;Laki-laki;Ibu Rumah Tangga;Weekday;Baskom ;Peralatan Dapur;2;Pcs;GM;20.000;40.000
+16-Jan-25;Yulia;39;Perempuan;Karyawan Swasta;Weekday;Baskom ;Peralatan Dapur;1;Pcs;Lion Star;35.000;35.000
+19-Jan-25;Nicholas;19;Laki-laki;Pelajar/Mahasiswa;Weekend;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;15.000;15.000
+13-Feb-25;Ratna;41;Perempuan;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+08-Jan-25;Reyhan;37;Laki-laki;Karyawan Swasta;Weekday;Baskom ;Peralatan Dapur;1;Pcs;Lion Star;35.000;35.000
+16-Feb-25;Bagas;21;Laki-laki;Pelajar/Mahasiswa;Weekend;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;10.000;10.000
+10-Feb-25;Agus;33;Laki-laki;Karyawan Swasta;Weekday;Batu Asah;Peralatan Dapur;1;Pcs;Jaya Mata;50.000;50.000
+25-Feb-25;Dani;19;Laki-laki;Pelajar/Mahasiswa;Weekday;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;10.000;10.000
+16-Feb-25;Reyhan;37;Laki-laki;Karyawan Swasta;Weekday;Batu Asah ;Peralatan Dapur;1;Pcs;Jaya Mata;50.000;50.000
+22-Jan-25;Eko;32;Laki-laki;Ibu Rumah Tangga;Weekday;Celemek ;Peralatan Dapur;1;Pcs;Tidak Ada Merk;29.000;29.000
+16-Jan-25;Cahyono;30;Laki-laki;Ibu Rumah Tangga;Weekend;Ember;Peralatan Dapur;1;Pcs;GM;50.000;50.000
+14-Feb-25;Gilang;32;Laki-laki;Ibu Rumah Tangga;Weekend;Ember ;Peralatan Dapur;1;Pcs;GM;50.000;50.000
+18-Jan-25;Irfan;34;Laki-laki;Karyawan Swasta;Weekend;Botol Kecap;Peralatan Dapur;3;Pcs;Lion Star;10.000;30.000
+03-Feb-25;Bambang;42;Laki-laki;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+18-Jan-25;Eko;30;Laki-laki;Teknisi;Weekend;Isolasi;Elektronik;5;Pcs;Vini Tape;5.000;25.000
+23-Feb-25;Ardi;45;Laki-laki;Ibu Rumah Tangga;Weekday;Ember ;Peralatan Dapur;1;Pcs;GM;50.000;50.000
+03-Jan-25;Lina;37;Perempuan;Karyawan Swasta;Weekend;Box Donat;Peralatan Dapur;2;Lusin;Shinpo;30.000;60.000
+20-Jan-25;Dina;35;Perempuan;Teknisi;Weekend;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+22-Jan-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+20-Feb-25;Citra;31;Perempuan;Ibu Rumah Tangga;Weekend;Gayung;Peralatan Dapur;1;Pcs;Lion Star;10.000;10.000
+16-Jan-25;Adit;37;Laki-laki;Karyawan Swasta;Weekend;Ember;Peralatan Dapur;1;Pcs;Lion Star;55.000;55.000
+11-Jan-25;Rizky;47;Laki-laki;Ibu Rumah Tangga;Weekday;Gayung;Peralatan Dapur;2;Pcs;Vinoda;7.000;14.000
+28-Feb-25;William;45;Laki-laki;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+21-Feb-25;Joko;34;Laki-laki;Ibu Rumah Tangga;Weekday;Keranjang Sampah;Peralatan Dapur;1;Meter;GM;18.000;18.000
+06-Jan-25;Sari;33;Perempuan;Teknisi;Weekend;Kabel;Elektronik;10;Pcs;Tonn;5.000;50.000
+04-Jan-25;Yusuf;30;Laki-laki;Ibu Rumah Tangga;Weekend;Keset Kaki;Peralatan Dapur;4;Pcs;Tidak Ada Merk;7.000;28.000
+18-Feb-25;Samsul;38;Laki-laki;Ibu Rumah Tangga;Weekday;Kuningan Kompor;Peralatan Dapur;1;Pcs;Rinnai;35.000;35.000
+07-Feb-25;Budi;44;Laki-laki;Pekerja Pabrik;Weekday;Elbow ;Perkakas;12;Pcs;Cross;5.000;60.000
+05-Jan-25;Reni;41;Perempuan;Pekerja Pabrik;Weekday;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+04-Feb-25;Teguh;43;Laki-laki;Pekerja Pabrik;Weekday;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+13-Feb-25;Desi;23;Perempuan;Pelajar/Mahasiswa;Weekday;Hanger;Perlengkapan Rumah;1;Kg;My Sun;10.000;10.000
+25-Feb-25;Dina;30;Perempuan;Ibu Rumah Tangga;Weekday;Panci;Peralatan Dapur;1;Pcs;Muliya;30.000;30.000
+28-Feb-25;Eko;34;Laki-laki;Ibu Rumah Tangga;Weekday;Panci;Peralatan Dapur;1;Goni;Muliya;30.000;30.000
+07-Feb-25;Heri;37;Laki-laki;Ibu Rumah Tangga;Weekday;Panci;Peralatan Dapur;1;Pcs;Muliya;30.000;30.000
+10-Jan-25;Teguh;22;Laki-laki;Pelajar/Mahasiswa;Weekday;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;10.000;10.000
+18-Jan-25;Fauzan;19;Laki-laki;Pelajar/Mahasiswa;Weekend;Hanger ;Perlengkapan Rumah;1;Pcs;Yuwei;10.000;10.000
+10-Feb-25;Bambang;43;Laki-laki;Pekerja Pabrik;Weekday;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+04-Jan-25;Yanti;23;Perempuan;Pelajar/Mahasiswa;Weekday;Hanger ;Perlengkapan Rumah;1;Pcs;Yuwei;10.000;10.000
+27-Feb-25;Desi;40;Perempuan;Pekerja Pabrik;Weekday;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+08-Jan-25;Samsul;43;Laki-laki;Pekerja Pabrik;Weekend;Evamatic;Perkakas;6;Pcs;Tidak Ada Merk;20.000;120.000
+07-Jan-25;Agus;30;Laki-laki;Ibu Rumah Tangga;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;30.000;30.000
+19-Feb-25;William;40;Laki-laki;Pekerja Pabrik;Weekend;Gembok;Perlengkapan Rumah;5;Pcs;XP;20.000;100.000
+23-Feb-25;Heri;47;Laki-laki;Ibu Rumah Tangga;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;30.000;30.000
+11-Jan-25;Gilang;40;Laki-laki;Ibu Rumah Tangga;Weekday;Pisau;Peralatan Dapur;1;Pcs;Dong Fang;15.000;15.000
+14-Feb-25;Agus;21;Laki-laki;Pelajar/Mahasiswa;Weekday;Jas Hujan ;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;10.000;10.000
+03-Jan-25;Ratna;47;Perempuan;Pekerja Pabrik;Weekday;Jas Hujan ;Perlengkapan Rumah;10;Pcs;Tiger Head;10.000;100.000
+20-Jan-25;Lina;45;Perempuan;Pekerja Pabrik;Weekend;Jas Hujan ;Perlengkapan Rumah;10;Pcs;Tidak Ada Merk;10.000;100.000
+04-Feb-25;Arif;34;Laki-laki;Karyawan Swasta;Weekday;Ember;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+28-Feb-25;Irfan;27;Laki-laki;Pegawai Kantor;Weekend;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+10-Feb-25;Tono;34;Laki-laki;Teknisi;Weekend;Kabel;Elektronik;10;Pcs;Tonn;5.000;50.000
+19-Jan-25;Reyhan;35;Laki-laki;Teknisi;Weekday;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+21-Jan-25;Nur;27;Perempuan;Pegawai Kantor;Weekday;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+26-Feb-25;Rizky;39;Laki-laki;Karyawan Swasta;Weekday;Ember;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+08-Jan-25;Rudi;38;Laki-laki;Karyawan Swasta;Weekday;Ember ;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+06-Feb-25;Yanti;22;Perempuan;Pelajar/Mahasiswa;Weekend;Karpet;Perlengkapan Rumah;1;Lusin;Tidak Ada Merk;20.000;20.000
+22-Jan-25;Bayu;38;Laki-laki;Karyawan Swasta;Weekday;Ember ;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+12-Feb-25;Bagas;42;Laki-laki;Karyawan Swasta;Weekday;Ember ;Peralatan Dapur;1;Pcs;Lion Star;55.000;55.000
+08-Jan-25;Nicholas;30;Laki-laki;Ibu Rumah Tangga;Weekend;Pisau;Peralatan Dapur;1;Bungkus;Dong Fang;15.000;15.000
+24-Jan-25;Fitri;38;Perempuan;Karyawan Swasta;Weekday;Ember ;Peralatan Dapur;1;Pcs;GM;90.000;90.000
+16-Jan-25;Ardi;30;Laki-laki;Ibu Rumah Tangga;Weekday;Pisau ;Peralatan Dapur;1;Pcs;Jaya Mata;20.000;20.000
+19-Jan-25;Adit;44;Laki-laki;Pekerja Pabrik;Weekday;Jas Hujan ;Perlengkapan Rumah;10;Pcs;Tidak Ada Merk;10.000;100.000
+01-Jan-25;Fajar;40;Laki-laki;Pekerja Pabrik;Weekday;Jepitan Baju;Perlengkapan Rumah;6;Pcs;Lion Star;15.000;90.000
+10-Jan-25;Dina;18;Perempuan;Pelajar/Mahasiswa;Weekday;Karpet;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;20.000;20.000
+20-Feb-25;Tari;45;Perempuan;Pekerja Pabrik;Weekday;Karpet;Perlengkapan Rumah;3;Meter;Jordan;30.000;90.000
+18-Jan-25;Samsul;44;Laki-laki;Pekerja Pabrik;Weekday;Karpet;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;30.000;120.000
+23-Jan-25;Gunawan;22;Laki-laki;Pelajar/Mahasiswa;Weekday;Keranjang Sampah;Perlengkapan Rumah;1;Meter;Nice;10.000;10.000
+26-Feb-25;Adit;33;Laki-laki;Teknisi;Weekday;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+01-Jan-25;Irfan;19;Laki-laki;Pelajar/Mahasiswa;Weekday;Klem;Perkakas;5;Pcs;Tidak Ada Merk;2.000;10.000
+24-Jan-25;Melati;34;Perempuan;Teknisi;Weekend;Kabel ;Elektronik;5;Pcs;Tidak Ada Merk;5.000;25.000
+24-Jan-25;Dina;35;Perempuan;Teknisi;Weekend;Kabel ;Elektronik;10;Pcs;Tonn;5.000;50.000
+18-Jan-25;Bambang;40;Laki-laki;Karyawan Swasta;Weekday;Garpu;Peralatan Dapur;4;Lusin;HS;10.000;40.000
+21-Jan-25;Yusuf;19;Laki-laki;Pelajar/Mahasiswa;Weekend;Klem;Perkakas;5;Pcs;Tidak Ada Merk;2.000;10.000
+02-Jan-25;Adit;41;Laki-laki;Pekerja Pabrik;Weekday;Karpet;Perlengkapan Rumah;2;Pcs;Tidak Ada Merk;30.000;60.000
+16-Feb-25;Dewi;20;Perempuan;Pelajar/Mahasiswa;Weekend;Kran;Perkakas;1;Pcs;Dcota;20.000;20.000
+09-Jan-25;Desi;37;Perempuan;Karyawan Swasta;Weekday;Gas Portable;Peralatan Dapur;1;Pcs;Wonder Fuel;20.000;20.000
+10-Feb-25;Hendra;40;Laki-laki;Karyawan Swasta;Weekday;Gayung;Peralatan Dapur;3;Pcs;Vinoda;15.000;45.000
+02-Jan-25;Yulia;30;Perempuan;Ibu Rumah Tangga;Weekend;Pisau;Peralatan Dapur;2;Pcs;Dong Fang;15.000;30.000
+10-Jan-25;Yanti;42;Perempuan;Pekerja Pabrik;Weekday;Karpet;Perlengkapan Rumah;2;Meter;Tidak Ada Merk;30.000;60.000
+14-Jan-25;Fauzan;34;Laki-laki;Karyawan Swasta;Weekend;Gayung;Peralatan Dapur;3;Pcs;Lion Star;10.000;30.000
+18-Jan-25;Joko;35;Laki-laki;Karyawan Swasta;Weekday;Gayung;Peralatan Dapur;3;Pcs;Lion Star;10.000;30.000
+20-Feb-25;Nur;22;Perempuan;Pelajar/Mahasiswa;Weekday;Kran;Perkakas;1;Pcs;Tidak Ada Merk;15.000;15.000
+03-Feb-25;Joko;42;Laki-laki;Pekerja Pabrik;Weekday;Karpet ;Perlengkapan Rumah;2;Pcs;Jordan;30.000;60.000
+13-Feb-25;Indah;35;Perempuan;Karyawan Swasta;Weekend;Jepitan Bakaran;Peralatan Dapur;1;Pcs;Tidak Ada Merk;60.000;60.000
+16-Jan-25;Gunawan;42;Laki-laki;Pekerja Pabrik;Weekend;Klem;Perkakas;4;Bungkus;Tidak Ada Merk;15.000;60.000
+06-Feb-25;Rahmat;37;Laki-laki;Karyawan Swasta;Weekday;Jepitan Bakaran ;Peralatan Dapur;1;Pcs;Tidak Ada Merk;60.000;60.000
+26-Feb-25;Samsul;34;Laki-laki;Karyawan Swasta;Weekday;Karpet ;Peralatan Dapur;2;Meter;Tidak Ada Merk;25.000;50.000
+22-Feb-25;Yanto;34;Laki-laki;Karyawan Swasta;Weekday;Keranjang Sampah;Peralatan Dapur;2;Pcs;GM;25.000;50.000
+09-Jan-25;Gunawan;32;Laki-laki;Karyawan Swasta;Weekday;Keset Kaki;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+17-Jan-25;Desi;40;Perempuan;Pekerja Pabrik;Weekday;Klem;Perkakas;4;Bungkus;Tidak Ada Merk;15.000;60.000
+08-Feb-25;Indah;20;Perempuan;Pelajar/Mahasiswa;Weekday;Kuas ;Perkakas;3;Pcs;Joker;5.000;15.000
+01-Jan-25;Samsul;40;Laki-laki;Karyawan Swasta;Weekend;Kuningan Kompor;Peralatan Dapur;2;Pcs;rinnai;20.000;40.000
+07-Jan-25;Fauzan;35;Laki-laki;Karyawan Swasta;Weekday;Kuningan Kompor;Peralatan Dapur;2;Pcs;rinnai;20.000;40.000
+19-Jan-25;Ardi;30;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Sunny;25.000;25.000
+15-Jan-25;Fajar;25;Laki-laki;Pegawai Kantor;Weekend;Kabel ;Elektronik;5;Pcs;Tonn;5.000;25.000
+12-Feb-25;Ayu;33;Perempuan;Teknisi;Weekday;Kalkulator;Elektronik;1;Pcs;Citizen;35.000;35.000
+27-Feb-25;Siti;35;Perempuan;Teknisi;Weekday;Kalkulator;Elektronik;1;Pcs;Citizen;35.000;35.000
+11-Jan-25;Tono;25;Laki-laki;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+07-Jan-25;Nina;31;Perempuan;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+10-Feb-25;Rahmat;32;Laki-laki;Teknisi;Weekend;Lampu LED;Elektronik;2;Pcs;Potens;30.000;60.000
+10-Jan-25;Joko;37;Laki-laki;Karyawan Swasta;Weekday;Kuningan Kompor;Peralatan Dapur;2;Pcs;rinnai;20.000;40.000
+18-Jan-25;Agus;20;Laki-laki;Pelajar/Mahasiswa;Weekend;Lem Lilin;Perkakas;3;Botol;Tidak Ada Merk;5.000;15.000
+17-Feb-25;Teguh;41;Laki-laki;Pekerja Pabrik;Weekday;Klem;Perkakas;4;Bungkus;Tidak Ada Merk;15.000;60.000
+17-Feb-25;Melati;33;Perempuan;Karyawan Swasta;Weekday;Mancis;Peralatan Dapur;2;Pcs;ICO Lighter;15.000;30.000
+16-Feb-25;Arif;24;Laki-laki;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+14-Feb-25;Rahmat;26;Laki-laki;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+12-Feb-25;Reni;35;Perempuan;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+08-Feb-25;Fitri;40;Perempuan;Karyawan Swasta;Weekend;Panci;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+28-Feb-25;Gilang;31;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+03-Jan-25;Fitri;38;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+25-Feb-25;Joko;34;Laki-laki;Teknisi;Weekend;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+09-Jan-25;Rina;42;Perempuan;Pekerja Pabrik;Weekend;Klem ;Perkakas;5;Bungkus;Tidak Ada Merk;15.000;75.000
+17-Feb-25;Sari;21;Perempuan;Pelajar/Mahasiswa;Weekday;Meteran;Perkakas;1;Pcs;K-TE;20.000;20.000
+09-Jan-25;Melati;43;Perempuan;Pekerja Pabrik;Weekday;Klem ;Perkakas;4;Pcs;Tidak Ada Merk;20.000;80.000
+01-Jan-25;Bayu;41;Laki-laki;Pekerja Pabrik;Weekday;Kran;Perkakas;4;Pcs;Tidak Ada Merk;20.000;80.000
+08-Feb-25;Rina;30;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Nagata;45.000;45.000
+03-Jan-25;Sari;43;Perempuan;Pekerja Pabrik;Weekend;Kran ;Perkakas;3;Pcs;Tidak Ada Merk;20.000;60.000
+27-Feb-25;Citra;39;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+08-Feb-25;Wulan;23;Perempuan;Pelajar/Mahasiswa;Weekend;Paku;Perkakas;1;Bungkus;Tidak Ada Merk;20.000;20.000
+22-Feb-25;Reyhan;30;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Sunny;25.000;25.000
+07-Feb-25;Gilang;38;Laki-laki;Karyawan Swasta;Weekday;Panci;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+17-Jan-25;Indah;34;Perempuan;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+26-Feb-25;Gunawan;44;Laki-laki;Pekerja Pabrik;Weekend;Kran ;Perkakas;2;Pcs;Dcota;25.000;50.000
+13-Jan-25;Sari;22;Perempuan;Pelajar/Mahasiswa;Weekday;Paku ;Perkakas;1;Bungkus;Tidak Ada Merk;20.000;20.000
+02-Jan-25;Reyhan;31;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Suxing;50.000;50.000
+18-Feb-25;Rizky;30;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;pcs;Tidak Ada Merk;15.000;15.000
+04-Feb-25;Rudi;42;Laki-laki;Karyawan Swasta;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+21-Jan-25;Bambang;40;Laki-laki;Pekerja Pabrik;Weekday;Kran ;Perkakas;4;Pcs;XP;15.000;60.000
+14-Jan-25;Maya;43;Perempuan;Pekerja Pabrik;Weekday;Kuas;Perkakas;12;Botol;Joker;5.000;60.000
+02-Jan-25;Ayu;21;Perempuan;Pelajar/Mahasiswa;Weekend;Payung ;Perlengkapan Rumah;1;Roll;Tidak Ada Merk;15.000;15.000
+27-Feb-25;Ratna;22;Perempuan;Pelajar/Mahasiswa;Weekday;Payung ;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;15.000;15.000
+22-Jan-25;Yanto;31;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+06-Feb-25;Nina;43;Perempuan;Pekerja Pabrik;Weekday;Kuas;Perkakas;12;Pcs;Joker;5.000;60.000
+27-Feb-25;Maya;40;Perempuan;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Nagata;45.000;45.000
+21-Feb-25;Budi;42;Laki-laki;Pekerja Pabrik;Weekend;Kuas ;Perkakas;12;Pcs;Joker;5.000;60.000
+16-Feb-25;Yulianto;38;Laki-laki;Karyawan Swasta;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+11-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekend;Panci ;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+24-Feb-25;Indah;37;Perempuan;Karyawan Swasta;Weekday;Panci ;Peralatan Dapur;1;Pcs;Muliya;55.000;55.000
+22-Feb-25;Adit;40;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu;Peralatan Dapur;1;Pcs;Nagata;45.000;45.000
+08-Feb-25;Samsul;35;Laki-laki;Karyawan Swasta;Weekday;Perangkap Tikus;Peralatan Dapur;3;Pcs;Tidak Ada Merk;25.000;75.000
+27-Feb-25;Dina;19;Perempuan;Pelajar/Mahasiswa;Weekend;Pot;Perlengkapan Rumah;1;Pcs;CJP;25.000;25.000
+20-Feb-25;Yusuf;41;Laki-laki;Pekerja Pabrik;Weekend;Mata Gerinda;Perkakas;4;Pcs;Tidak Ada Merk;15.000;60.000
+27-Feb-25;Melati;42;Perempuan;Pekerja Pabrik;Weekend;Obeng;Perkakas;5;Pcs;Tidak Ada Merk;10.000;50.000
+09-Jan-25;Lestari;21;Perempuan;Pelajar/Mahasiswa;Weekday;Pot;Perlengkapan Rumah;1;Pcs;CJP;25.000;25.000
+15-Feb-25;Budi;19;Laki-laki;Pelajar/Mahasiswa;Weekday;Pot;Perlengkapan Rumah;1;Pcs;GM;25.000;25.000
+08-Jan-25;Ridwan;45;Laki-laki;Pekerja Pabrik;Weekend;Paku;Perkakas;4;Bungkus;Tidak Ada Merk;15.000;60.000
+13-Feb-25;Nina;41;Perempuan;Pekerja Pabrik;Weekday;Paku ;Perkakas;3;Bungkus;Tidak Ada Merk;15.000;45.000
+15-Feb-25;Tono;42;Laki-laki;Pekerja Pabrik;Weekend;Paku ;Perkakas;5;Bungkus;Tidak Ada Merk;15.000;75.000
+23-Feb-25;Samsul;42;Laki-laki;Pekerja Pabrik;Weekend;Paku ;Perkakas;3;Bungkus;Tidak Ada Merk;15.000;45.000
+06-Jan-25;Maya;40;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;1;Pcs;Nagata;45.000;45.000
+13-Jan-25;Siti;37;Perempuan;Karyawan Swasta;Weekday;Pisau;Peralatan Dapur;2;Pcs;Troy;20.000;40.000
+14-Feb-25;Joko;46;Laki-laki;Ibu Rumah Tangga;Weekend;Sapu ;Peralatan Dapur;1;Pcs;Shun Hong;25.000;25.000
+06-Jan-25;Lestari;45;Perempuan;Pekerja Pabrik;Weekend;Polybag;Perlengkapan Rumah;6;Bungkus;Tidak Ada Merk;20.000;120.000
+03-Feb-25;Gilang;21;Laki-laki;Pelajar/Mahasiswa;Weekday;Pot;Perlengkapan Rumah;2;Pcs;Mio;25.000;50.000
+03-Feb-25;Agus;32;Laki-laki;Karyawan Swasta;Weekday;Pisau ;Peralatan Dapur;2;Pcs;Dong Fang;15.000;30.000
+07-Jan-25;Rahmat;19;Laki-laki;Pelajar/Mahasiswa;Weekday;Pot;Perlengkapan Rumah;2;Pcs;GM;25.000;50.000
+04-Jan-25;Melati;45;Perempuan;Pekerja Pabrik;Weekday;Polybag;Perlengkapan Rumah;6;Bungkus;Tidak Ada Merk;20.000;120.000
+08-Jan-25;Arif;44;Laki-laki;Pekerja Pabrik;Weekday;Polybag;Perlengkapan Rumah;3;Bungkus;Tidak Ada Merk;20.000;60.000
+24-Jan-25;Siti;42;Perempuan;Pekerja Pabrik;Weekday;Polybag ;Perlengkapan Rumah;4;Bungkus;Tidak Ada Merk;20.000;80.000
+26-Feb-25;Arif;44;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;3;Bungkus;GM;25.000;75.000
+12-Jan-25;Teguh;41;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;3;Pcs;CJP;25.000;75.000
+21-Feb-25;Fauzan;43;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;3;Pcs;CJP;25.000;75.000
+18-Feb-25;Dani;21;Laki-laki;Pelajar/Mahasiswa;Weekend;Pot ;Perlengkapan Rumah;1;Pcs;GM;25.000;25.000
+01-Jan-25;Gilang;41;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Kg;GM;25.000;75.000
+19-Feb-25;Dewi;45;Perempuan;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;Mio;25.000;75.000
+02-Jan-25;Gunawan;33;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;2;Pcs;Tidak Ada Merk;25.000;50.000
+05-Feb-25;Rina;37;Perempuan;Karyawan Swasta;Weekend;Pisau ;Peralatan Dapur;2;Pcs;Dong Fang;15.000;30.000
+15-Jan-25;Samsul;37;Laki-laki;Karyawan Swasta;Weekday;Pisau ;Peralatan Dapur;2;Pcs;Dong Fang;15.000;30.000
+18-Jan-25;Gilang;42;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;GM;25.000;75.000
+19-Feb-25;Ardi;37;Laki-laki;Karyawan Swasta;Weekday;Regulator;Peralatan Dapur;1;Pcs;Winn Gas;80.000;80.000
+12-Feb-25;Dewi;36;Perempuan;Karyawan Swasta;Weekday;Regulator;Peralatan Dapur;1;Pcs;Hipro;70.000;70.000
+15-Feb-25;Yanto;40;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;Mio;25.000;75.000
+19-Feb-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;Mio;25.000;75.000
+16-Jan-25;Reyhan;42;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;GM;25.000;75.000
+18-Jan-25;Teguh;42;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;2;Pcs;Mio;25.000;50.000
+03-Feb-25;Rahmat;45;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;2;Pcs;Mio;25.000;50.000
+08-Jan-25;Cahyono;32;Laki-laki;Ibu Rumah Tangga;Weekend;Sapu ;Peralatan Dapur;1;Pcs;Shun Hong;25.000;25.000
+19-Feb-25;Rudi;35;Laki-laki;Karyawan Swasta;Weekday;Regulator;Peralatan Dapur;1;Pcs;Destec;90.000;90.000
+24-Feb-25;Lestari;44;Perempuan;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Pcs;GM;25.000;75.000
+11-Feb-25;Fajar;34;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;1;Goni;Shun Hong;25.000;25.000
+07-Feb-25;Bayu;41;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;2;Pcs;Mio;25.000;50.000
+08-Jan-25;Heri;40;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Shun Hong;25.000;50.000
+08-Jan-25;Bagas;35;Laki-laki;Karyawan Swasta;Weekday;Regulator;Peralatan Dapur;1;Pcs;Destec;90.000;90.000
+16-Feb-25;Teguh;37;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;1;Pcs;Shun Hong;25.000;25.000
+26-Feb-25;Yosef;43;Laki-laki;Pekerja Pabrik;Weekend;Pot;Perlengkapan Rumah;3;Pcs;GM;25.000;75.000
+16-Feb-25;Lestari;43;Perempuan;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;2;Pcs;GM;25.000;50.000
+20-Jan-25;Melati;44;Perempuan;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;3;Goni;CJP;25.000;75.000
+06-Feb-25;Ratna;21;Perempuan;Pelajar/Mahasiswa;Weekday;Sapu;Perlengkapan Rumah;2;Pcs;Tidak Ada Merk;13.000;26.000
+19-Jan-25;Teguh;20;Laki-laki;Pelajar/Mahasiswa;Weekday;Sapu ;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;13.000;13.000
+11-Jan-25;Fauzan;43;Laki-laki;Pekerja Pabrik;Weekday;Pot;Perlengkapan Rumah;2;Pcs;GM;25.000;50.000
+07-Jan-25;Hendra;19;Laki-laki;Pelajar/Mahasiswa;Weekend;Sarung tangan ;Perkakas;1;Pcs;Sun;10.000;10.000
+21-Feb-25;Eko;45;Laki-laki;Pekerja Pabrik;Weekday;Pot ;Perlengkapan Rumah;2;Pcs;GM;25.000;50.000
+15-Feb-25;Rizky;40;Laki-laki;Karyawan Swasta;Weekend;Regulator ;Peralatan Dapur;1;Pcs;Hipro;70.000;70.000
+08-Jan-25;Adit;42;Laki-laki;Pekerja Pabrik;Weekday;Pot ;Perlengkapan Rumah;2;Goni;Mio;25.000;50.000
+27-Feb-25;Lestari;40;Perempuan;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Shun Hong;25.000;50.000
+12-Jan-25;Yanto;35;Laki-laki;Karyawan Swasta;Weekend;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+15-Feb-25;Fajar;38;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;2;Goni;Shun Hong;25.000;50.000
+17-Jan-25;Wulan;19;Perempuan;Pelajar/Mahasiswa;Weekend;Seal Tape;Perkakas;5;Pcs;Dcota;5.000;25.000
+18-Jan-25;Yanti;36;Perempuan;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+24-Jan-25;Lina;32;Perempuan;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+07-Jan-25;Dani;34;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+11-Jan-25;Agus;45;Laki-laki;Pekerja Pabrik;Weekend;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+12-Jan-25;Adit;35;Laki-laki;Karyawan Swasta;Weekend;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+04-Feb-25;Adit;39;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Shun Hong;25.000;50.000
+14-Jan-25;Bambang;42;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;3;Meter;Tidak Ada Merk;20.000;60.000
+03-Feb-25;Teguh;42;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+24-Feb-25;Wulan;42;Perempuan;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+07-Jan-25;Andi;39;Laki-laki;Karyawan Swasta;Weekend;Sapu;Peralatan Dapur;2;Pcs;Sunny;25.000;50.000
+24-Jan-25;Sari;33;Perempuan;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+19-Feb-25;Yanto;42;Laki-laki;Pekerja Pabrik;Weekend;Sapu;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+18-Feb-25;Fauzan;27;Laki-laki;Pegawai Kantor;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+25-Feb-25;Hendra;46;Laki-laki;Ibu Rumah Tangga;Weekend;Sapu ;Peralatan Dapur;1;Goni;Suxing;50.000;50.000
+13-Jan-25;Tari;30;Perempuan;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+25-Feb-25;Surya;42;Laki-laki;Pekerja Pabrik;Weekend;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+17-Feb-25;Dina;34;Perempuan;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+26-Feb-25;Bambang;40;Laki-laki;Pekerja Pabrik;Weekend;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+16-Feb-25;Ridwan;36;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+21-Feb-25;Agus;34;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+18-Feb-25;Joko;30;Laki-laki;Ibu Rumah Tangga;Weekday;Sapu ;Peralatan Dapur;1;Pcs;Suxing;50.000;50.000
+23-Jan-25;Cahyono;32;Laki-laki;Ibu Rumah Tangga;Weekday;Sendok;Peralatan Dapur;1;Lusin;HS;10.000;10.000
+27-Feb-25;Nina;35;Perempuan;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+08-Feb-25;Ayu;35;Perempuan;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Tidak Ada Merk;25.000;25.000
+16-Jan-25;Samsul;43;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+27-Feb-25;Reni;36;Perempuan;Teknisi;Weekday;Lampu LED;Elektronik;1;pcs;Potens;30.000;30.000
+04-Feb-25;Bagas;27;Laki-laki;Pegawai Kantor;Weekend;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+07-Feb-25;Rudi;30;Laki-laki;Pegawai Kantor;Weekend;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+07-Jan-25;Melati;43;Perempuan;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Sunny;25.000;50.000
+14-Jan-25;Citra;41;Perempuan;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+23-Feb-25;Teguh;32;Laki-laki;Teknisi;Weekend;Lampu LED;Elektronik;1;Goni;Potens;30.000;30.000
+15-Feb-25;Samsul;42;Laki-laki;Pekerja Pabrik;Weekday;Sapu;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+22-Jan-25;Fajar;35;Laki-laki;Teknisi;Weekday;Lampu LED;Elektronik;1;Pcs;Potens;30.000;30.000
+14-Jan-25;Nina;31;Perempuan;Teknisi;Weekday;Plug;Elektronik;2;Pcs;Visalux;20.000;40.000
+19-Feb-25;Yosef;21;Laki-laki;Pelajar/Mahasiswa;Weekend;Sekam;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;10.000;10.000
+19-Jan-25;William;42;Laki-laki;Pekerja Pabrik;Weekend;Sapu ;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+17-Feb-25;Nur;37;Perempuan;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+03-Feb-25;Nina;38;Perempuan;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+25-Feb-25;Melati;40;Perempuan;Ibu Rumah Tangga;Weekday;Sendok;Peralatan Dapur;2;Lusin;HS;10.000;20.000
+21-Jan-25;Dani;42;Laki-laki;Pekerja Pabrik;Weekend;Sapu ;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+15-Jan-25;William;35;Laki-laki;Karyawan Swasta;Weekday;Sapu;Peralatan Dapur;2;Pcs;Sunny;25.000;50.000
+16-Feb-25;Ayu;35;Perempuan;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Dato;30.000;60.000
+16-Feb-25;Tari;41;Perempuan;Pekerja Pabrik;Weekday;Sapu ;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+17-Jan-25;Lina;43;Perempuan;Pekerja Pabrik;Weekday;Sapu ;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+22-Jan-25;William;41;Laki-laki;Pekerja Pabrik;Weekday;Sarung Tangan;Perkakas;12;Meter;Tidak Ada Merk;10.000;120.000
+23-Jan-25;Teguh;30;Laki-laki;Ibu Rumah Tangga;Weekend;Sendok;Peralatan Dapur;2;Lusin;HS;10.000;20.000
+13-Jan-25;Indah;40;Perempuan;Ibu Rumah Tangga;Weekday;Sendok;Peralatan Dapur;1;Lusin;HS;10.000;10.000
+27-Feb-25;Rina;39;Perempuan;Ibu Rumah Tangga;Weekday;Sendok ;Peralatan Dapur;1;Lusin;Diamond;15.000;15.000
+20-Feb-25;Lina;33;Perempuan;Teknisi;Weekend;Plug;Elektronik;1;Pcs;Visalux;20.000;20.000
+06-Feb-25;Yusuf;23;Laki-laki;Pelajar/Mahasiswa;Weekend;Sekam;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;10.000;10.000
+20-Jan-25;Maya;43;Perempuan;Ibu Rumah Tangga;Weekend;Sendok ;Peralatan Dapur;3;Lusin;HS;10.000;30.000
+08-Feb-25;Arif;43;Laki-laki;Pekerja Pabrik;Weekend;Sarung tangan ;Perkakas;12;Pcs;Sun;10.000;120.000
+17-Feb-25;Siti;22;Perempuan;Pelajar/Mahasiswa;Weekday;Selang;Perkakas;1;Pcs;Tidak Ada Merk;20.000;20.000
+28-Feb-25;Andi;41;Laki-laki;Pekerja Pabrik;Weekday;Seal Tape;Perkakas;6;Pcs;Dcota;15.000;90.000
+26-Feb-25;Fajar;37;Laki-laki;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+25-Feb-25;Nur;44;Perempuan;Ibu Rumah Tangga;Weekday;Sendok ;Peralatan Dapur;1;Lusin;Diamond;15.000;15.000
+16-Feb-25;Heri;45;Laki-laki;Ibu Rumah Tangga;Weekend;Serbet ;Peralatan Dapur;2;Pcs;Aneka Produksi;6.000;12.000
+22-Feb-25;Samsul;22;Laki-laki;Pelajar/Mahasiswa;Weekday;Sikat;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;10.000;10.000
+17-Feb-25;Citra;44;Perempuan;Pekerja Pabrik;Weekday;Seal Tape;Perkakas;6;Pcs;Dcota;15.000;90.000
+21-Feb-25;Bambang;37;Laki-laki;Karyawan Swasta;Weekend;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+11-Feb-25;Adit;37;Laki-laki;Karyawan Swasta;Weekend;Sapu ;Peralatan Dapur;2;Pcs;Nagata;35.000;70.000
+27-Feb-25;Wulan;19;Perempuan;Pekerja Pabrik;Weekday;Seal Tape;Perkakas;4;Pcs;Dcota;15.000;60.000
+13-Feb-25;Lina;42;Perempuan;Pekerja Pabrik;Weekday;Sekam;Perlengkapan Rumah;12;Pcs;Tidak Ada Merk;10.000;120.000
+05-Jan-25;Reyhan;23;Laki-laki;Pelajar/Mahasiswa;Weekend;Sikat;Perlengkapan Rumah;1;Pcs;Nagata;10.000;10.000
+14-Jan-25;Agus;37;Laki-laki;Karyawan Swasta;Weekend;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+09-Jan-25;Reni;40;Perempuan;Pekerja Pabrik;Weekday;Sekam;Perlengkapan Rumah;12;Pcs;Tidak Ada Merk;10.000;120.000
+09-Feb-25;Maya;32;Perempuan;Teknisi;Weekday;Plug;Elektronik;2;Pcs;Visalux;20.000;40.000
+02-Jan-25;Yulianto;43;Laki-laki;Pekerja Pabrik;Weekend;Sekam ;Perlengkapan Rumah;12;Pcs;Tidak Ada Merk;10.000;120.000
+10-Feb-25;Fauzan;33;Laki-laki;Karyawan Swasta;Weekend;Sapu ;Peralatan Dapur;2;Pcs;Sunny;25.000;50.000
+09-Jan-25;Maya;47;Perempuan;Pekerja Pabrik;Weekday;Selang;Perkakas;6;Meter;Tidak Ada Merk;20.000;120.000
+18-Feb-25;Hendra;44;Laki-laki;Pekerja Pabrik;Weekday;Sikat;Perlengkapan Rumah;6;Pcs;Tidak Ada Merk;10.000;60.000
+22-Feb-25;Fajar;40;Laki-laki;Pekerja Pabrik;Weekday;Sikat;Perlengkapan Rumah;5;Pcs;Nagata;10.000;50.000
+24-Feb-25;Lina;32;Perempuan;Teknisi;Weekday;Plug;Elektronik;2;Pcs;Visalux;20.000;40.000
+26-Feb-25;Cahyono;42;Laki-laki;Pekerja Pabrik;Weekday;Sikat;Perlengkapan Rumah;6;Pcs;Tidak Ada Merk;10.000;60.000
+05-Jan-25;Gunawan;43;Laki-laki;Pekerja Pabrik;Weekday;Sikat;Perlengkapan Rumah;6;Pcs;Tidak Ada Merk;10.000;60.000
+12-Feb-25;Cahyono;18;Laki-laki;Pelajar/Mahasiswa;Weekend;Sikat;Perlengkapan Rumah;1;Meter;Nagata;10.000;10.000
+14-Jan-25;Dani;41;Laki-laki;Pekerja Pabrik;Weekend;Sikat;Perlengkapan Rumah;6;Pcs;Tidak Ada Merk;10.000;60.000
+13-Feb-25;Wulan;19;Perempuan;Pelajar/Mahasiswa;Weekend;Sikat ;Perlengkapan Rumah;1;Pcs;Dato;10.000;10.000
+19-Feb-25;Reni;36;Perempuan;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+05-Feb-25;Indah;43;Perempuan;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+11-Feb-25;William;45;Laki-laki;Ibu Rumah Tangga;Weekday;Serbet ;Peralatan Dapur;2;Pcs;Aneka Produksi;6.000;12.000
+24-Feb-25;Gunawan;40;Laki-laki;Ibu Rumah Tangga;Weekday;Skop ;Perkakas;2;Pcs;Klintex;15.000;30.000
+12-Jan-25;Heri;23;Laki-laki;Pelajar/Mahasiswa;Weekend;Sikat ;Perlengkapan Rumah;1;Pcs;Nagoya;10.000;10.000
+24-Jan-25;Yulia;42;Perempuan;Pekerja Pabrik;Weekday;Sikat ;Perlengkapan Rumah;5;Pcs;Tidak Ada Merk;10.000;50.000
+24-Jan-25;Wulan;40;Perempuan;Pekerja Pabrik;Weekday;Sikat ;Perlengkapan Rumah;6;Bungkus;Dato;12.000;72.000
+21-Feb-25;Irfan;43;Laki-laki;Pekerja Pabrik;Weekend;Skop;Perkakas;5;Pcs;Klintex;15.000;75.000
+13-Jan-25;Dewi;34;Perempuan;Teknisi;Weekday;Plug ;Elektronik;2;Pcs;Visalux;20.000;40.000
+01-Jan-25;Dani;34;Laki-laki;Teknisi;Weekday;Saklar;Elektronik;1;Pcs;Visalux;25.000;25.000
+17-Feb-25;Maya;35;Perempuan;Teknisi;Weekday;Socket ;Elektronik;1;Pcs;Visalux;30.000;30.000
+25-Feb-25;Maya;32;Perempuan;Teknisi;Weekday;Socket ;Elektronik;1;Pcs;Visalux;30.000;30.000
+15-Feb-25;William;35;Laki-laki;Karyawan Swasta;Weekday;Sapu ;Peralatan Dapur;1;Pcs;Nagata;35.000;35.000
+11-Feb-25;Eko;41;Laki-laki;Pekerja Pabrik;Weekday;Skrap;Perkakas;5;Bungkus;Gladio;15.000;75.000
+19-Feb-25;Ridwan;27;Laki-laki;Pegawai Kantor;Weekday;Socket ;Elektronik;1;Pcs;Visalux;20.000;20.000
+05-Jan-25;Rina;35;Perempuan;Teknisi;Weekday;Stop Kontak;Elektronik;1;Pcs;Visalux;25.000;25.000
+12-Feb-25;Tari;40;Perempuan;Karyawan Swasta;Weekend;Saringan;Peralatan Dapur;2;Pcs;PUP;10.000;20.000
+24-Jan-25;Maya;34;Perempuan;Karyawan Swasta;Weekday;Saringan;Peralatan Dapur;2;Pcs;PUP;10.000;20.000
+07-Feb-25;Teguh;22;Laki-laki;Pelajar/Mahasiswa;Weekday;Tali tambang;Perkakas;2;Pcs;Tidak Ada Merk;15.000;30.000
+03-Jan-25;Indah;36;Perempuan;Karyawan Swasta;Weekday;Selang Gas;Peralatan Dapur;1;Pcs;Quantum;100.000;100.000
+02-Jan-25;Cahyono;37;Laki-laki;Karyawan Swasta;Weekday;Sendok;Peralatan Dapur;3;Lusin;HS;10.000;30.000
+12-Jan-25;Nicholas;35;Laki-laki;Karyawan Swasta;Weekday;Sendok;Peralatan Dapur;2;Lusin;HS;10.000;20.000
+08-Jan-25;Bayu;34;Laki-laki;Karyawan Swasta;Weekend;Sendok;Peralatan Dapur;1;Lusin;Diamond;20.000;20.000
+02-Jan-25;Ardi;40;Laki-laki;Pekerja Pabrik;Weekday;Tali Tambang ;Perkakas;3;Pcs;Tidak Ada Merk;25.000;75.000
+24-Feb-25;Yulia;42;Perempuan;Karyawan Swasta;Weekday;Sendok ;Peralatan Dapur;2;Lusin;HS;10.000;20.000
+14-Jan-25;Melati;41;Perempuan;Pekerja Pabrik;Weekend;Tali Tambang ;Perkakas;2;Pcs;Tidak Ada Merk;25.000;50.000
+07-Feb-25;Samsul;40;Laki-laki;Pekerja Pabrik;Weekend;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+23-Jan-25;Rudi;38;Laki-laki;Karyawan Swasta;Weekday;Sendok;Peralatan Dapur;2;Lusin;XP;15.000;30.000
+17-Jan-25;Maya;34;Perempuan;Ibu Rumah Tangga;Weekday;Skop ;Perkakas;2;Pcs;Klintex;15.000;30.000
+03-Feb-25;Hendra;42;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+19-Feb-25;Adit;33;Laki-laki;Karyawan Swasta;Weekday;Serbet;Peralatan Dapur;1;Pcs;Aneka Produksi;15.000;15.000
+24-Jan-25;Ayu;37;Perempuan;Karyawan Swasta;Weekday;Serbet ;Peralatan Dapur;1;Pcs;Aneka Produksi;15.000;15.000
+14-Feb-25;Teguh;37;Laki-laki;Karyawan Swasta;Weekday;Sikat ;Peralatan Dapur;1;Pcs;dato;20.000;20.000
+07-Feb-25;Reyhan;41;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+08-Jan-25;Yanto;31;Laki-laki;Ibu Rumah Tangga;Weekday;Spon;Peralatan Dapur;2;Pcs;Susemi;7.000;14.000
+05-Jan-25;Joko;42;Laki-laki;Pekerja Pabrik;Weekend;Tanah Campur;Perlengkapan Rumah;5;Pcs;Tidak Ada Merk;20.000;100.000
+06-Feb-25;Nur;31;Perempuan;Ibu Rumah Tangga;Weekday;Spon;Peralatan Dapur;3;Goni;Susemi;7.000;21.000
+17-Feb-25;Yanti;19;Perempuan;Pelajar/Mahasiswa;Weekday;Tali Tambang ;Perkakas;1;Pcs;Tidak Ada Merk;15.000;15.000
+07-Jan-25;Bambang;32;Laki-laki;Ibu Rumah Tangga;Weekday;Spon ;Peralatan Dapur;2;Pcs;Susemi;7.000;14.000
+28-Feb-25;Rahmat;34;Laki-laki;Karyawan Swasta;Weekday;Skop;Perkakas;2;Pcs;Klintex;15.000;30.000
+08-Feb-25;Sari;44;Perempuan;Ibu Rumah Tangga;Weekend;Tampi;Peralatan Dapur;2;Pcs;Manau;10.000;20.000
+05-Jan-25;Hendra;40;Laki-laki;Karyawan Swasta;Weekday;Solet Karet;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+01-Jan-25;Budi;32;Laki-laki;Karyawan Swasta;Weekday;Spon ;Peralatan Dapur;5;Pcs;Scotch Brite;10.000;50.000
+09-Jan-25;Yulia;33;Perempuan;Karyawan Swasta;Weekday;Spon ;Peralatan Dapur;5;Pcs;Susemi;10.000;50.000
+03-Jan-25;Dewi;19;Perempuan;Pelajar/Mahasiswa;Weekend;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+07-Feb-25;Yanto;43;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+23-Jan-25;Adit;45;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+11-Jan-25;Bambang;37;Laki-laki;Karyawan Swasta;Weekday;Sumbu Kompor;Peralatan Dapur;3;Bungkus;Hock;15.000;45.000
+13-Jan-25;Rina;37;Perempuan;Karyawan Swasta;Weekday;Tampi;Peralatan Dapur;2;Pcs;Manau;15.000;30.000
+03-Jan-25;Maya;32;Perempuan;Teknisi;Weekday;Stop Kontak;Elektronik;1;Pcs;Visalux;25.000;25.000
+20-Jan-25;Tari;39;Perempuan;Karyawan Swasta;Weekday;Tampi;Peralatan Dapur;2;Pcs;Manau;15.000;30.000
+24-Feb-25;Dewi;36;Perempuan;Karyawan Swasta;Weekday;Tampi;Peralatan Dapur;2;Pcs;Manau;15.000;30.000
+21-Feb-25;Andi;22;Laki-laki;Pelajar/Mahasiswa;Weekend;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+22-Feb-25;Bayu;42;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+18-Jan-25;Yusuf;35;Laki-laki;Teknisi;Weekday;Stop Kontak;Elektronik;1;Pcs;Visalux;25.000;25.000
+20-Feb-25;Maya;40;Perempuan;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;20.000;60.000
+15-Jan-25;Eko;40;Laki-laki;Pekerja Pabrik;Weekday;Tanah Campur;Perlengkapan Rumah;4;Pcs;Tidak Ada Merk;20.000;80.000
+22-Feb-25;Rizky;45;Laki-laki;Pekerja Pabrik;Weekday;Taplak Meja ;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;30.000;90.000
+05-Feb-25;Sari;35;Perempuan;Teknisi;Weekday;Stop Kontak ;Elektronik;1;Pcs;Visalux;25.000;25.000
+05-Feb-25;Tari;19;Perempuan;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+28-Feb-25;Yanto;35;Laki-laki;Karyawan Swasta;Weekday;Tampi ;Peralatan Dapur;2;Pcs;Manau;15.000;30.000
+16-Jan-25;Arif;35;Laki-laki;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;2;Pcs;Shinpo;25.000;50.000
+12-Jan-25;Rudi;40;Laki-laki;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+09-Jan-25;Wulan;40;Perempuan;Ibu Rumah Tangga;Weekend;Tanah Campur;Pupuk;1;Pcs;Tidak Ada Merk;35.000;35.000
+11-Feb-25;Rudi;32;Laki-laki;Ibu Rumah Tangga;Weekday;Taplak Meja;Peralatan Dapur;2;Pcs;Tidak Ada Merk;14.000;28.000
+22-Feb-25;Yosef;38;Laki-laki;Ibu Rumah Tangga;Weekday;Taplak Meja;Peralatan Dapur;4;Pcs;Tidak Ada Merk;14.000;56.000
+24-Jan-25;Indah;32;Perempuan;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+20-Feb-25;Melati;19;Perempuan;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+06-Feb-25;Dani;30;Laki-laki;Ibu Rumah Tangga;Weekend;Tempat Bakaran ;Peralatan Dapur;1;Pcs;Tidak Ada Merk;35.000;35.000
+06-Jan-25;Lina;35;Perempuan;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+12-Feb-25;Ridwan;37;Laki-laki;Karyawan Swasta;Weekend;Toples;Peralatan Dapur;4;Pcs;Tidak Ada Merk;10.000;40.000
+23-Jan-25;Yulianto;35;Laki-laki;Karyawan Swasta;Weekend;Toples;Peralatan Dapur;2;Pcs;Shinpo;15.000;30.000
+01-Jan-25;Rahmat;42;Laki-laki;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;2;Pcs;Shinpo;15.000;30.000
+26-Feb-25;Ardi;35;Laki-laki;Karyawan Swasta;Weekend;Toples;Peralatan Dapur;4;Pcs;Tidak Ada Merk;10.000;40.000
+12-Feb-25;Teguh;37;Laki-laki;Karyawan Swasta;Weekend;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+05-Jan-25;Yosef;23;Laki-laki;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+12-Jan-25;Bagas;24;Laki-laki;Pegawai Kantor;Weekday;Stop Kontak ;Elektronik;1;Pcs;Visalux;20.000;20.000
+02-Jan-25;Ridwan;30;Laki-laki;Pegawai Kantor;Weekday;Stop Kontak ;Elektronik;1;Pcs;Visalux;20.000;20.000
+26-Feb-25;Gilang;24;Laki-laki;Pegawai Kantor;Weekday;Stop Kontak ;Elektronik;1;Pcs;Visalux;20.000;20.000
+08-Feb-25;Gunawan;21;Laki-laki;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+03-Feb-25;Budi;40;Laki-laki;Pekerja Pabrik;Weekday;Tas ;Perlengkapan Rumah;2;Pcs;Tidak Ada Merk;25.000;50.000
+05-Feb-25;Reni;34;Perempuan;Karyawan Swasta;Weekday;Toples;Peralatan Dapur;3;Pcs;Tidak Ada Merk;10.000;30.000
+21-Jan-25;Irfan;21;Laki-laki;Pelajar/Mahasiswa;Weekend;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+05-Jan-25;Cahyono;18;Laki-laki;Pelajar/Mahasiswa;Weekday;Tanah Campur;Perlengkapan Rumah;1;Bungkus;Tidak Ada Merk;20.000;20.000
+20-Jan-25;Lestari;31;Perempuan;Ibu Rumah Tangga;Weekday;Toples;Peralatan Dapur;2;Pcs;Tidak Ada Merk;15.000;30.000
+12-Feb-25;Arif;30;Laki-laki;Ibu Rumah Tangga;Weekday;Toples ;Peralatan Dapur;1;Pcs;Tidak Ada Merk;15.000;15.000
+20-Jan-25;Ratna;30;Perempuan;Ibu Rumah Tangga;Weekday;Toples ;Peralatan Dapur;3;Pcs;Tidak Ada Merk;15.000;45.000
+26-Feb-25;Fauzan;34;Laki-laki;Karyawan Swasta;Weekday;Toples ;Peralatan Dapur;5;Pcs;Shinpo;15.000;75.000
+14-Jan-25;Hendra;22;Laki-laki;Pelajar/Mahasiswa;Weekday;Tas;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;25.000;25.000
+01-Jan-25;Tono;42;Laki-laki;Pekerja Pabrik;Weekday;Tas ;Perlengkapan Rumah;3;Pcs;Tidak Ada Merk;25.000;75.000
+19-Jan-25;Yanto;37;Laki-laki;Karyawan Swasta;Weekday;Toples ;Peralatan Dapur;4;Pcs;Tidak Ada Merk;10.000;40.000
+14-Feb-25;Bambang;18;Laki-laki;Pelajar/Mahasiswa;Weekday;Tas;Perlengkapan Rumah;1;Lusin;Tidak Ada Merk;25.000;25.000
+23-Jan-25;Arif;40;Laki-laki;Pekerja Pabrik;Weekday;Thinner;Perkakas;4;Pcs;Tidak Ada Merk;15.000;60.000
+16-Jan-25;Ayu;32;Perempuan;Ibu Rumah Tangga;Weekday;Tudung Saji ;Peralatan Dapur;1;Pcs;Lion Star;35.000;35.000
+09-Jan-25;Sari;22;Perempuan;Pegawai Kantor;Weekday;Test Pen;Elektronik;3;Pcs;Visalux;10.000;30.000
+28-Feb-25;Bayu;30;Laki-laki;Ibu Rumah Tangga;Weekday;Baskom;Peralatan Dapur;1;Meter;GM;20.000;20.000
+17-Feb-25;Nina;40;Perempuan;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+07-Feb-25;Irfan;41;Laki-laki;Pekerja Pabrik;Weekend;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+28-Feb-25;Hendra;40;Laki-laki;Karyawan Swasta;Weekday;Baskom;Peralatan Dapur;1;Pcs;GM;35.000;35.000
+08-Feb-25;Cahyono;42;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+14-Jan-25;Surya;45;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+12-Feb-25;Yulianto;40;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+12-Feb-25;Samsul;41;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+19-Feb-25;Ayu;40;Perempuan;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+11-Jan-25;Irfan;30;Laki-laki;Pegawai Kantor;Weekday;Fitting;Elektronik;3;Pcs;Visalux;10.000;30.000
+26-Feb-25;Eko;25;Laki-laki;Pegawai Kantor;Weekday;Fitting;Elektronik;5;Pcs;Visalux;10.000;50.000
+20-Feb-25;Ratna;37;Perempuan;Karyawan Swasta;Weekday;Baskom;Peralatan Dapur;1;pcs;Lion Star;35.000;35.000
+06-Feb-25;Joko;35;Laki-laki;Karyawan Swasta;Weekend;Baskom ;Peralatan Dapur;1;pcs;Lion Star;35.000;35.000
+19-Feb-25;Cahyono;41;Laki-laki;Pekerja Pabrik;Weekend;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+08-Feb-25;Yulia;22;Perempuan;Pelajar/Mahasiswa;Weekday;Celengan ;Souvenir;3;Pcs;Tidak Ada Merk;5.000;15.000
+04-Jan-25;Nur;27;Perempuan;Pegawai Kantor;Weekday;Fitting;Elektronik;2;Pcs;Visalux;10.000;20.000
+06-Feb-25;Teguh;24;Laki-laki;Pegawai Kantor;Weekday;Fitting;Elektronik;2;pcs;Visalux;10.000;20.000
+12-Feb-25;Heri;30;Laki-laki;Teknisi;Weekend;Fitting ;Elektronik;5;Pcs;Visalux;4.000;20.000
+24-Feb-25;Rina;34;Perempuan;Teknisi;Weekday;Isolasi;Elektronik;5;Pcs;Vini Tape;5.000;25.000
+15-Jan-25;Bayu;34;Laki-laki;Teknisi;Weekend;Isolasi;Elektronik;5;Pcs;Vini Tape;5.000;25.000
+01-Jan-25;Yosef;38;Laki-laki;Ibu Rumah Tangga;Weekday;Baskom;Peralatan Dapur;2;Pcs;GM;20.000;40.000
+19-Jan-25;Rizky;40;Laki-laki;Karyawan Swasta;Weekday;Baskom ;Peralatan Dapur;1;pcs;Lion Star;35.000;35.000
+05-Feb-25;Lina;41;Perempuan;Pekerja Pabrik;Weekend;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+09-Jan-25;Tari;44;Perempuan;Ibu Rumah Tangga;Weekday;Baskom;Peralatan Dapur;1;Goni;GM;20.000;20.000
+17-Jan-25;Dewi;37;Perempuan;Ibu Rumah Tangga;Weekday;Baskom ;Peralatan Dapur;1;Roll;GM;20.000;20.000
+11-Jan-25;Budi;41;Laki-laki;Pekerja Pabrik;Weekday;Celengan;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+23-Jan-25;Samsul;20;Laki-laki;Pelajar/Mahasiswa;Weekday;Gembok;Perlengkapan Rumah;1;Pcs;Tidak Ada Merk;15.000;15.000
+26-Feb-25;Yulia;30;Perempuan;Ibu Rumah Tangga;Weekday;Baskom ;Peralatan Dapur;2;Pcs;GM;20.000;40.000
+03-Feb-25;Yusuf;35;Laki-laki;Teknisi;Weekday;Isolasi;Elektronik;5;Pcs;Vini Tape;4.000;20.000
+07-Feb-25;Fajar;30;Laki-laki;Ibu Rumah Tangga;Weekday;Baskom ;Peralatan Dapur;2;Pcs;GM;20.000;40.000
+20-Jan-25;Sari;39;Perempuan;Karyawan Swasta;Weekday;Baskom ;Peralatan Dapur;1;Pcs;Lion Star;35.000;35.000
+25-Feb-25;Teguh;19;Laki-laki;Pelajar/Mahasiswa;Weekend;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;15.000;15.000
+18-Jan-25;Tono;41;Laki-laki;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+18-Feb-25;Irfan;37;Laki-laki;Karyawan Swasta;Weekday;Baskom ;Peralatan Dapur;1;Pcs;Lion Star;35.000;35.000
+07-Jan-25;Irfan;21;Laki-laki;Pelajar/Mahasiswa;Weekend;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;10.000;10.000
+18-Feb-25;Budi;33;Laki-laki;Karyawan Swasta;Weekday;Batu Asah;Peralatan Dapur;1;Pcs;Jaya Mata;50.000;50.000
+05-Jan-25;Dewi;19;Perempuan;Pelajar/Mahasiswa;Weekday;Hanger;Perlengkapan Rumah;1;Pcs;My Sun;10.000;10.000
+22-Jan-25;Rizky;37;Laki-laki;Karyawan Swasta;Weekday;Batu Asah ;Peralatan Dapur;1;Pcs;Jaya Mata;50.000;50.000
+05-Jan-25;Bagas;32;Laki-laki;Ibu Rumah Tangga;Weekday;Celemek ;Peralatan Dapur;1;Pcs;Tidak Ada Merk;29.000;29.000
+05-Feb-25;Fitri;30;Perempuan;Ibu Rumah Tangga;Weekend;Ember;Peralatan Dapur;1;Pcs;GM;50.000;50.000
+20-Jan-25;Yulianto;32;Laki-laki;Ibu Rumah Tangga;Weekend;Ember ;Peralatan Dapur;1;Pcs;GM;50.000;50.000
+13-Jan-25;Ayu;34;Perempuan;Karyawan Swasta;Weekend;Botol Kecap;Peralatan Dapur;3;Pcs;Lion Star;10.000;30.000
+06-Feb-25;Melati;42;Perempuan;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+07-Jan-25;Joko;30;Laki-laki;Teknisi;Weekend;Isolasi;Elektronik;5;Pcs;Vini Tape;5.000;25.000
+15-Feb-25;Rudi;45;Laki-laki;Ibu Rumah Tangga;Weekday;Ember ;Peralatan Dapur;1;Pcs;GM;50.000;50.000
+01-Jan-25;Yanto;37;Laki-laki;Karyawan Swasta;Weekend;Box Donat;Peralatan Dapur;2;Lusin;Shinpo;30.000;60.000
+20-Feb-25;Desi;35;Perempuan;Teknisi;Weekend;Kabel;Elektronik;5;Pcs;Tonn;5.000;25.000
+05-Jan-25;Irfan;40;Laki-laki;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000
+06-Jan-25;Indah;31;Perempuan;Ibu Rumah Tangga;Weekend;Gayung;Peralatan Dapur;1;Pcs;Lion Star;10.000;10.000
+16-Jan-25;Ridwan;37;Laki-laki;Karyawan Swasta;Weekend;Ember;Peralatan Dapur;1;Pcs;Lion Star;55.000;55.000
+04-Feb-25;William;47;Laki-laki;Ibu Rumah Tangga;Weekday;Gayung;Peralatan Dapur;2;Pcs;Vinoda;7.000;14.000
+06-Jan-25;Wulan;45;Perempuan;Pekerja Pabrik;Weekday;Celengan ;Souvenir;12;Pcs;Tidak Ada Merk;5.000;60.000

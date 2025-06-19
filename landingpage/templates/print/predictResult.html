@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Items</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/print.css' %}">
+    <script>
+        function doPrint() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <h2>Prediction Result</h2>
+
+    <button class="btn" onclick="doPrint()">Print</button>
+    <button class="btn-back" onclick="goBack()">Back</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Predicted Category</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Occupation</th>
+                <th>Recommended Product</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.predicted_category }}</td>
+                <td>{{ item.age }}</td>
+                <td>{{ item.gender }}</td>
+                <td>{{ item.occupation }}</td>
+                <td>{{ item.recommended_products }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
