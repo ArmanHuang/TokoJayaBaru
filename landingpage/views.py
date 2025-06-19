@@ -1,141 +1,124 @@
-import os
-import joblib
+from django.shortcuts import render
+from django.conf import settings
 import pandas as pd
-import xgboost as xgb
-from sklearn.preprocessing import StandardScaler, LabelEncoder
-import numpy as np
+from django.http import JsonResponse
+from .ml_utils import get_models_and_preprocessors, preprocess_input_data
+from .models import PredictionResult, ProductCategory, Product
 
-MODEL_DIR = 'landingpage/model/'
+# Home Page View
+def home(request):
+    categories = ProductCategory.objects.all()
+    return render(request, 'landingpage/home.html', {'categories': categories})
 
-def get_models_and_preprocessors():
-    models_and_preprocessors = {}
+
+# API to Get Products by Category
+def get_products_by_category(request, category_name):
     try:
-        models_and_preprocessors['xgb_pipeline_model'] = joblib.load(os.path.join(MODEL_DIR, 'xgb_pipeline_model.pkl'))
-        print("✅ Model XGBoost dimuat.")
-    except Exception as e:
-        models_and_preprocessors['xgb_pipeline_model'] = None
-        print(f"❌ Gagal memuat model XGBoost: {e}")
+        category = ProductCategory.objects.get(name__iexact=category_name)
+        products = Product.objects.filter(category=category)
+        product_data = [
+            {
+                'name': product.name,
+                'image': product.image.url if product.image else '',
+                'description': product.description or ''
+            }
+            for product in products
+        ]
+        return JsonResponse({'products': product_data})
+    except ProductCategory.DoesNotExist:
+        return JsonResponse({'products': []})
 
-    try:
-        models_and_preprocessors['scaler'] = joblib.load(os.path.join(MODEL_DIR, 'scaler.pkl'))
-        print("✅ Scaler dimuat.")
-    except Exception as e:
-        models_and_preprocessors['scaler'] = None
-        print(f"❌ Scaler tidak ditemukan atau gagal dimuat: {e}")
 
-    try:
-        models_and_preprocessors['label_encoders_features'] = joblib.load(os.path.join(MODEL_DIR, 'label_encoders.pkl'))
-        print("✅ Label encoders untuk fitur dimuat.")
-    except Exception as e:
-        models_and_preprocessors['label_encoders_features'] = {}
-        print(f"❌ Label encoders untuk fitur tidak ditemukan atau gagal dimuat: {e}")
-
-    try:
-        models_and_preprocessors['label_encoder_target'] = joblib.load(os.path.join(MODEL_DIR, 'label_encoder.pkl'))
-        print("✅ Label encoder untuk target dimuat.")
-    except Exception as e:
-        models_and_preprocessors['label_encoder_target'] = None
-        print(f"❌ Label encoder untuk target tidak ditemukan atau gagal dimuat: {e}")
-
-    try:
-        df_mapping = joblib.load(os.path.join(MODEL_DIR, 'produk_kategori_mapping.pkl'))
-        print("✅ Mapping kategori produk dimuat.")
-        
-        if isinstance(df_mapping, pd.DataFrame):
-            mapping_dict = (
-                df_mapping
-                .groupby('Kategori Produk')['Nama Produk']
-                .apply(list)
-                .to_dict()
-            )
-            models_and_preprocessors['produk_kategori_mapping'] = mapping_dict
-            print("Kategori produk tersedia:", list(mapping_dict.keys()))
-        else:
-            models_and_preprocessors['produk_kategori_mapping'] = df_mapping
-    except Exception as e:
-        models_and_preprocessors['produk_kategori_mapping'] = None
-        print(f"❌ Mapping kategori produk tidak ditemukan atau gagal dimuat: {e}")
-
-    return models_and_preprocessors
-
-def preprocess_input_data(df, label_encoders_features, scaler=None):
-    df = df.copy()
-
-    # Kategorikal & numerik fitur
-    categorical_features = list(label_encoders_features.keys())
-    numerical_features = ['Usia', 'Jumlah', 'Harga Produk', 'Total Harga']
-
-    # Encode kategorikal
-    for col in categorical_features:
-        if col in df.columns:
-            print(f"Encoding kolom: {col}")
-            le = label_encoders_features[col]
-            try:
-                df[col] = le.transform(df[col])
-            except ValueError:
-                print(f"⚠️ Nilai di kolom '{col}' tidak ditemukan dalam encoder. Menggunakan nilai default.")
-                default_val = le.transform([le.classes_[0]])[0]
-                df[col] = df[col].apply(lambda x: le.transform([x])[0] if x in le.classes_ else default_val)
-        else:
-            print(f"⚠️ Kolom '{col}' tidak ditemukan dalam input. Diisi 0.")
-            df[col] = 0
-
-    # Scaling numerik
-    if scaler:
-        try:
-            expected_features = scaler.feature_names_in_
-            for feat in expected_features:
-                if feat not in df.columns:
-                    print(f"⚠️ Kolom numerik '{feat}' hilang, diisi 0.")
-                    df[feat] = 0
-            df = df[expected_features]
-            df[expected_features] = scaler.transform(df[expected_features])
-            print(f"✅ Data setelah scaling:\n{df.head()}")
-        except Exception as e:
-            print(f"⚠️ Error saat scaling kolom numerik: {e}")
-
-    return df
-
-def predict_landing_page(input_data):
+# Polls View with Prediction Logic
+def polls(request):
     models = get_models_and_preprocessors()
-    xgb_model = models.get('xgb_pipeline_model')
+    xgb_pipeline_model = models.get('xgb_pipeline_model')
     scaler = models.get('scaler')
     label_encoders_features = models.get('label_encoders_features')
     label_encoder_target = models.get('label_encoder_target')
+    produk_kategori_mapping = models.get('produk_kategori_mapping')
 
-    if xgb_model is None or scaler is None or not label_encoders_features:
-        return "❌ Model atau preprocessor tidak berhasil dimuat."
+    def normalize_name(name):
+        return name.strip().lower()
 
-    try:
-        input_df = pd.DataFrame([input_data])
-        input_df = input_df.drop(columns=['Nama Produk'], errors='ignore')
+    products = Product.objects.all()
 
-        processed_df = preprocess_input_data(input_df, label_encoders_features, scaler)
+    products_images_by_normalized = {
+        normalize_name(p.name): (p.image.url if p.image else '/static/images/default.png')
+        for p in products
+    }
 
-        # Urutkan sesuai fitur model
-        if hasattr(xgb_model, 'feature_names_in_'):
-            model_features = list(xgb_model.feature_names_in_)
-        else:
-            model_features = processed_df.columns.tolist()  # fallback
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        age = request.POST.get('age')
+        gender = request.POST.get('gender')
+        occupation = request.POST.get('occupation')
+        event = request.POST.get('event')
 
-        for feat in model_features:
-            if feat not in processed_df.columns:
-                print(f"⚠️ Menambahkan kolom '{feat}' kosong.")
-                processed_df[feat] = 0
+        try:
+            age = int(age)
+        except ValueError:
+            return render(request, 'landingpage/polls.html', {
+                'error': "Umur harus berupa angka.",
+                'form_data': request.POST.dict()
+            })
 
-        processed_df = processed_df[model_features]
+        try:
+            input_df = pd.DataFrame([{
+                'Usia': age,
+                'Gender': gender,
+                'Pekerjaan': occupation,
+                'Event': event,
+                'Jumlah': 1,
+                'Harga Produk': 10000.0,
+                'Total Harga': 10000.0,
+            }])
 
-        # Prediksi
-        prediction_proba = xgb_model.predict_proba(processed_df)
-        print(f"✅ Probabilitas prediksi: {prediction_proba}")
+            processed = preprocess_input_data(input_df, label_encoders_features, scaler)
+            ordered_cols = ['Usia', 'Gender', 'Pekerjaan', 'Event', 'Jumlah', 'Harga Produk', 'Total Harga']
+            processed = processed[ordered_cols]
 
-        predicted_class_encoded = prediction_proba.argmax(axis=1)
+            prediction = xgb_pipeline_model.predict(processed)
+            predicted_category = label_encoder_target.inverse_transform([prediction[0]])[0]
 
-        if label_encoder_target:
-            predicted_class = label_encoder_target.inverse_transform(predicted_class_encoded)[0]
-            return f"✅ Prediksi: {predicted_class}, Probabilitas: {prediction_proba[0].max():.4f}"
-        else:
-            return f"✅ Prediksi (encoded): {predicted_class_encoded[0]}, Probabilitas: {prediction_proba[0].max():.4f}"
+            recommended_raw = produk_kategori_mapping.get(predicted_category, [])
+            recommended = list(dict.fromkeys([p.strip() for p in recommended_raw]))
 
-    except Exception as e:
-        return f"❌ Terjadi kesalahan saat prediksi: {e}"
+            product_images = {}
+            for p in recommended:
+                key = normalize_name(p)
+                product_images[p] = products_images_by_normalized.get(key, '/static/images/default.png')
+
+            PredictionResult.objects.create(
+                name=name,
+                age=age,
+                gender=gender,
+                occupation=occupation,
+                event=event,
+                predicted_category=predicted_category,
+                recommended_products=recommended
+            )
+
+            result = {
+                'name': name,
+                'age': age,
+                'gender': gender,
+                'occupation': occupation,
+                'event': event,
+                'category': predicted_category,
+                'recommended': recommended,
+                'product_images': product_images,
+            }
+
+            return render(request, 'landingpage/polls.html', {
+                'result': result,
+                'form_data': request.POST.dict()
+            })
+
+        except Exception as e:
+            return render(request, 'landingpage/polls.html', {
+                'error': f"Terjadi kesalahan saat prediksi: {str(e)}",
+                'form_data': request.POST.dict()
+            })
+
+    return render(request, 'landingpage/polls.html')
