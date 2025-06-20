@@ -1,43 +1,29 @@
 from django.shortcuts import render
-from django.conf import settings
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 import pandas as pd
 from .ml_utils import get_models_and_preprocessors, preprocess_input_data
 from .models import Product, ProductCategory, PredictionResult
-
-# Home Page
-def home(request):
-    categories = ProductCategory.objects.all()
-    return render(request, 'landingpage/home.html', {'categories': categories})
+from django.conf import settings
 
 
-# API to get products by category
-def get_products_by_category(request, category_name):
-    try:
-        category = ProductCategory.objects.get(name__iexact=category_name)
-        products = Product.objects.filter(category=category)
-        product_data = [
-            {
-                'name': product.name,
-                'image': product.image.url if product.image else '',
-                'description': product.description or ''
-            }
-            for product in products
-        ]
-        return JsonResponse({'products': product_data})
-    except ProductCategory.DoesNotExist:
-        return JsonResponse({'products': []})
-
-
-# Form Prediksi View
 def polls(request):
-    models = get_models_and_preprocessors()
-    xgb_pipeline_model = models.get('xgb_pipeline_model')
-    scaler = models.get('scaler')
-    label_encoders_features = models.get('label_encoders_features')
-    label_encoder_target = models.get('label_encoder_target')
-    produk_kategori_mapping = models.get('produk_kategori_mapping')
+    try:
+        # Ambil model dan komponen yang diperlukan
+        models = get_models_and_preprocessors()
+        xgb_pipeline_model = models.get('xgb_pipeline_model')
+        scaler = models.get('scaler')
+        label_encoders_features = models.get('label_encoders_features')
+        label_encoder_target = models.get('label_encoder_target')
+        produk_kategori_mapping = models.get('produk_kategori_mapping')
 
+        # Cek apakah semua komponen penting tersedia
+        if not all([xgb_pipeline_model, scaler, label_encoders_features, label_encoder_target, produk_kategori_mapping]):
+            return HttpResponse("❌ Model Machine Learning belum lengkap atau gagal dimuat.", status=500)
+
+    except Exception as e:
+        return HttpResponse(f"❌ Gagal memuat model Machine Learning: {str(e)}", status=500)
+
+    # Tangani request POST (submit form prediksi)
     if request.method == 'POST':
         name = request.POST.get('name')
         age = request.POST.get('age')
@@ -54,6 +40,7 @@ def polls(request):
             })
 
         try:
+            # Buat data frame dari input form
             input_df = pd.DataFrame([{
                 'Usia': age,
                 'Gender': gender,
@@ -64,20 +51,21 @@ def polls(request):
                 'Total Harga': 10000.0,
             }])
 
+            # Preprocess
             processed = preprocess_input_data(input_df, label_encoders_features, scaler)
             ordered_cols = ['Usia', 'Gender', 'Pekerjaan', 'Event', 'Jumlah', 'Harga Produk', 'Total Harga']
             processed = processed[ordered_cols]
 
+            # Prediksi
             prediction = xgb_pipeline_model.predict(processed)
             predicted_category = label_encoder_target.inverse_transform([prediction[0]])[0]
 
+            # Produk rekomendasi
             recommended_names = produk_kategori_mapping.get(predicted_category, [])
             recommended_names_clean = list(dict.fromkeys([p.strip() for p in recommended_names]))
-
-            # Ambil objek produk dari DB
             recommended_products = Product.objects.filter(name__in=recommended_names_clean)
 
-            # Simpan hasil prediksi
+            # Simpan hasil ke DB
             PredictionResult.objects.create(
                 name=name,
                 age=age,
@@ -95,7 +83,7 @@ def polls(request):
                 'occupation': occupation,
                 'event': event,
                 'category': predicted_category,
-                'recommended': recommended_products  # pakai objek Product, bukan string
+                'recommended': recommended_products
             }
 
             return render(request, 'landingpage/polls.html', {
@@ -105,8 +93,9 @@ def polls(request):
 
         except Exception as e:
             return render(request, 'landingpage/polls.html', {
-                'error': f"Terjadi kesalahan saat prediksi: {str(e)}",
+                'error': f"❌ Terjadi kesalahan saat prediksi: {str(e)}",
                 'form_data': request.POST.dict()
             })
 
+    # Jika GET (form belum diisi), tampilkan form kosong
     return render(request, 'landingpage/polls.html')
