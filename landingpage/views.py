@@ -122,3 +122,18 @@ def polls(request):
             })
 
     return render(request, 'landingpage/polls.html')
+
+def polls(request):
+    print("🧪 View polls() dipanggil")
+    
+    if request.method == 'POST':
+        print("📥 Data POST masuk:", request.POST)
+
+        # Tambahkan ini untuk debug input
+        name = request.POST.get('name')
+        age = request.POST.get('age')
+        gender = request.POST.get('gender')
+        occupation = request.POST.get('occupation')
+        event = request.POST.get('event')
+
+        print(f"Data Diterima: {name}, {age}, {gender}, {occupation}, {event}")
