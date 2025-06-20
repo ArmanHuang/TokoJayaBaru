@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["python312", "pip", "gunicorn"]
+
+[phases.build]
+cmds = ["pip install -r requirements.txt"]
+
+[start]
+cmd = "gunicorn TokoJayaBaru.wsgi:application --bind 0.0.0.0:$PORT"
