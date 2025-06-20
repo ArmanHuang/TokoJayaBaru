@@ -80,11 +80,12 @@
             <p><strong>Daftar Produk:</strong></p>
             <div id="modal-products" class="product-grid">
                 {% for product in result.recommended %}
-                    <div class="product-card">
-                        <img src="{{ product.image.url }}" alt="{{ product.name }}">
-                        <h4>{{ product.name }}</h4>
-                    </div>
-                {% endfor %}
+                <div class="product-card">
+                    <img src="{{ result.product_images|get_item:product.name }}" alt="{{ product.name }}">
+                    <h4>{{ product.name }}</h4>
+                </div>
+            {% endfor %}
+
             </div>
 
             {% if result.recommended|length > 6 %}
