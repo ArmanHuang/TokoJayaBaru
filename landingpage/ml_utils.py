@@ -5,7 +5,8 @@ import xgboost as xgb
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import numpy as np
 
-MODEL_DIR = 'landingpage/model/'
+from django.conf import settings
+MODEL_DIR = os.path.join(settings.BASE_DIR, 'landingpage', 'model')
 
 def get_models_and_preprocessors():
     models_and_preprocessors = {}
