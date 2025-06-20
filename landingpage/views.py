@@ -1,17 +1,17 @@
 from django.shortcuts import render
 from django.conf import settings
-import pandas as pd
 from django.http import JsonResponse
+import pandas as pd
 from .ml_utils import get_models_and_preprocessors, preprocess_input_data
-from .models import PredictionResult, ProductCategory, Product
+from .models import Product, ProductCategory, PredictionResult
 
-# Home Page View
+# Home Page
 def home(request):
     categories = ProductCategory.objects.all()
     return render(request, 'landingpage/home.html', {'categories': categories})
 
 
-# API to Get Products by Category
+# API to get products by category
 def get_products_by_category(request, category_name):
     try:
         category = ProductCategory.objects.get(name__iexact=category_name)
@@ -29,7 +29,7 @@ def get_products_by_category(request, category_name):
         return JsonResponse({'products': []})
 
 
-# Polls View with Prediction Logic
+# Form Prediksi View
 def polls(request):
     models = get_models_and_preprocessors()
     xgb_pipeline_model = models.get('xgb_pipeline_model')
@@ -37,16 +37,6 @@ def polls(request):
     label_encoders_features = models.get('label_encoders_features')
     label_encoder_target = models.get('label_encoder_target')
     produk_kategori_mapping = models.get('produk_kategori_mapping')
-
-    def normalize_name(name):
-        return name.strip().lower()
-
-    products = Product.objects.all()
-
-    products_images_by_normalized = {
-        normalize_name(p.name): (p.image.url if p.image else '/static/images/default.png')
-        for p in products
-    }
 
     if request.method == 'POST':
         name = request.POST.get('name')
@@ -81,14 +71,13 @@ def polls(request):
             prediction = xgb_pipeline_model.predict(processed)
             predicted_category = label_encoder_target.inverse_transform([prediction[0]])[0]
 
-            recommended_raw = produk_kategori_mapping.get(predicted_category, [])
-            recommended = list(dict.fromkeys([p.strip() for p in recommended_raw]))
+            recommended_names = produk_kategori_mapping.get(predicted_category, [])
+            recommended_names_clean = list(dict.fromkeys([p.strip() for p in recommended_names]))
 
-            product_images = {}
-            for p in recommended:
-                key = normalize_name(p)
-                product_images[p] = products_images_by_normalized.get(key, '/static/images/default.png')
+            # Ambil objek produk dari DB
+            recommended_products = Product.objects.filter(name__in=recommended_names_clean)
 
+            # Simpan hasil prediksi
             PredictionResult.objects.create(
                 name=name,
                 age=age,
@@ -96,7 +85,7 @@ def polls(request):
                 occupation=occupation,
                 event=event,
                 predicted_category=predicted_category,
-                recommended_products=recommended
+                recommended_products=[p.name for p in recommended_products]
             )
 
             result = {
@@ -106,8 +95,7 @@ def polls(request):
                 'occupation': occupation,
                 'event': event,
                 'category': predicted_category,
-                'recommended': recommended,
-                'product_images': product_images,
+                'recommended': recommended_products  # pakai objek Product, bukan string
             }
 
             return render(request, 'landingpage/polls.html', {
@@ -122,18 +110,3 @@ def polls(request):
             })
 
     return render(request, 'landingpage/polls.html')
-
-def polls(request):
-    print("🧪 View polls() dipanggil")
-    
-    if request.method == 'POST':
-        print("📥 Data POST masuk:", request.POST)
-
-        # Tambahkan ini untuk debug input
-        name = request.POST.get('name')
-        age = request.POST.get('age')
-        gender = request.POST.get('gender')
-        occupation = request.POST.get('occupation')
-        event = request.POST.get('event')
-
-        print(f"Data Diterima: {name}, {age}, {gender}, {occupation}, {event}")
