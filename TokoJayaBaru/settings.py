@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-aae%yr_wjv$@!*)ves=mvlz!hr@0%(&8!i%^fvw716w+1cch8j'
 DEBUG = True
-ALLOWED_HOSTS = ['31.97.51.94', 'tokojayabaru.com', 'www.tokojayabaru.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','31.97.51.94', 'tokojayabaru.com', 'www.tokojayabaru.com']
 
 INSTALLED_APPS = [
     'jazzmin',
