@@ -43,7 +43,6 @@ def polls(request):
         for p in products
     }
 
-    MAX_PRODUCTS = 3 
     if request.method == 'POST':
         name = request.POST.get('name')
         age = request.POST.get('age')
@@ -81,7 +80,6 @@ def polls(request):
 
             # Hilangkan duplikat tapi jaga urutan, lalu batasi jumlah produk
             recommended = list(dict.fromkeys([p.strip() for p in recommended_raw]))
-            recommended = recommended[:MAX_PRODUCTS]
 
             # Buat dictionary product_images berdasarkan recommended
             product_images = {}
