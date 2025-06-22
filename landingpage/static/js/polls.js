@@ -12,16 +12,18 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPage = 1;
     const productsPerPage = 6;
 
+    // Fungsi untuk generate HTML produk dengan atribut class dan data yang aman pakai tanda kutip
     function generateProductHTML(productName) {
-        const imageUrl = productImagesData[productName];
+        const imageUrl = productImagesData[productName] || "{% static 'images/default.png' %}";
         return `
             <div class="product-card" data-product-name="${productName}">
-                <img src="${imageUrl}" alt="${productName}">
+                <img src="${imageUrl}" alt="${productName}" onerror="this.src='{% static 'images/default.png' %}'" />
                 <h4>${productName}</h4>
             </div>
         `;
     }
 
+    // Render produk di modal berdasarkan daftar produk yang diberikan
     function displayProducts(productsToDisplay) {
         console.log("Menampilkan produk:", productsToDisplay);
         const productHTML = productsToDisplay.map(product => generateProductHTML(product)).join('');
@@ -29,16 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
         console.log("Jumlah elemen product-card setelah render:", modalProducts.querySelectorAll('.product-card').length);
 
+        // Pasang event listener klik ke tiap product-card
         modalProducts.querySelectorAll('.product-card').forEach(card => {
             card.addEventListener('click', function() {
                 const productName = this.dataset.productName;
                 console.log(`Produk "${productName}" diklik!`);
-                // Tambahkan logika yang diinginkan di sini
+                // Tambahkan logika lain sesuai kebutuhan di sini
             });
             console.log("Event listener ditambahkan ke:", card);
         });
     }
 
+    // Update tampilan pagination
     function updatePagination() {
         const totalPages = Math.ceil(currentProducts.length / productsPerPage) || 1;
         currentPageSpan.textContent = currentPage;
@@ -53,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Tampilkan produk berdasarkan halaman yang dipilih
     function showPage(pageNumber) {
         currentPage = pageNumber;
         const startIndex = (currentPage - 1) * productsPerPage;
@@ -69,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         paginationControls.style.display = 'none';
     }
 
+    // Event handler tombol pagination
     prevPageButton.onclick = function() {
         if (currentPage > 1) {
             showPage(currentPage - 1);
@@ -82,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    // Fungsi menutup modal
     window.closeModal = function() {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
@@ -92,24 +99,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
+// Fungsi buka modal (bila perlu)
 function openModal() {
-    document.getElementById("resultModal").style.display = "flex";
+    const modal = document.getElementById("resultModal");
+    modal.style.display = "flex";
     document.body.classList.add("modal-open");
 }
 
+// Fungsi tutup modal (bila perlu)
 function closeModal() {
-    document.getElementById("resultModal").style.display = "none";
+    const modal = document.getElementById("resultModal");
+    modal.style.display = "none";
     document.body.classList.remove("modal-open");
 }
 
+// Validasi form input usia dan pekerjaan
 document.addEventListener('DOMContentLoaded', function () {
     const ageInput = document.getElementById('age');
     const genderSelect = document.getElementById('gender');
     const occupationSelect = document.getElementById('occupation');
     const form = document.querySelector('form');
 
-    // Rentang usia sesuai pekerjaan
+    // Rentang usia valid berdasarkan pekerjaan
     const usiaValid = {
         'Ibu Rumah Tangga': [17, 65],
         'Karyawan Swasta': [17, 50],
@@ -146,13 +157,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Gabungkan pengecekan validasi
+    // Gabungkan semua validasi
     function cekSemuaValidasi() {
         cekValidasiUsia();
         cekValidasiGenderPekerjaan();
     }
 
-    // Event listener untuk interaksi user
     ageInput.addEventListener('input', cekSemuaValidasi);
     occupationSelect.addEventListener('change', cekSemuaValidasi);
     genderSelect.addEventListener('change', cekSemuaValidasi);
@@ -160,8 +170,8 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
         cekSemuaValidasi();
         if (!form.checkValidity()) {
-            e.preventDefault(); // Jangan kirim kalau ada yang invalid
-            form.reportValidity(); // Tampilkan pesan error
+            e.preventDefault();
+            form.reportValidity();
         }
     });
 });
