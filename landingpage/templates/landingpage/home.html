@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Jaya Baru</title>
+
+    <!-- Google Fonts -->
+    <link href="https:/fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <div id="static-url" data-static-url="{% static '' %}"></div>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar">
+    <div class="logo">
+        <a href="#home" class="logo-link">
+            <img src="{% static 'images/logo.png' %}" alt="Logo">
+        </a>
+        <div class="logo-text">Toko Jaya Baru</div>
+    </div>
+    
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#AboutUs">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact-us">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- Hero Section -->
+<section id="home">
+    <div class="container fade-in">
+        <div class="text-container">
+            <h1 class="welcome-text">Welcome to Toko Jaya Baru</h1>
+            <p><span class="typing-text">Shop for all your household needs!</span></p>
+            <a href="{% url 'landingpage_polls' %}" class="btn">Predicts Your Products</a>
+        </div>
+        <div class="image-container">
+            <img src="{% static 'images/Gambar 1.png' %}" alt="Toko Jaya Baru">
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="AboutUs">
+    <div class="container fade-in">
+        <div class="text-container">
+            <h1>About Us</h1>
+            <p>
+                Kami adalah Toko Jaya Baru, sebuah toko yang berlokasi di Pertokoan Cipta Puri Blok BB No. 14 - Batam. Kami menyediakan berbagai peralatan rumah tangga dari berbagai kategori, mulai dari peralatan dapur, elektronik, hingga perkakas. Toko kami berkomitmen untuk memberikan produk berkualitas dengan harga terjangkau untuk kebutuhan sehari-hari Anda. Kami juga selalu mengutamakan kepuasan pelanggan.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="{% static 'images/toko.png' %}" alt="Toko Jaya Baru">
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products">
+    <div class="container">
+        <h2 class="fade-in">Category Products</h2>
+        <div class="cards">
+            {% for category in categories %}
+                <div class="card" onclick="openModal('{{ category.name|urlencode }}')">
+                    {% if category.image %}
+                        <img src="{{ category.image.url }}" alt="{{ category.name }}">
+                    {% else %}
+                        <img src="{% static 'images/default.png' %}" alt="Default Image">
+                    {% endif %}
+                    <h3>{{ category.name }}</h3>
+                </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+</section>
+
+ <!-- Modal -->
+ <div class="modal" id="productModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h2 class="products-title" id ="modal-title">Products</h2>
+        <div class="products-container">
+            <div id="modal-products" class="product-grid">
+                </div>
+            <div id="modal-pagination" style="display: none;">
+                <button id="prevPage">Previous</button>
+                <span id="currentPage">1</span> / <span id="totalPages">1</span>
+                <button id="nextPage">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact-us">
+    <div class="container">
+        <div class="contact-info">
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo">
+            </div>
+            <div class="store-info">
+                <h3>TOKO JAYA BARU</h3>
+                <p>Pertokoan Cipta Puri Blok BB No. 14 - Batam</p>
+                <p>Telp. (0778)-321223; HP. 0821 7130 1283</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.059135859549!2d103.9618072!3d1.1080103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98b1c4a0e5e2d%3A0xc3133fb2a3645196!2sPertokoan+Cipta+Puri+Blok+BB+No.+14+-+Batam!5e0!3m2!1sen!2sid!4v1683147983444!5m2!1sen!2sid" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Toko Jaya Baru. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
