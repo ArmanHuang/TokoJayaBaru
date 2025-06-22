@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-aae%yr_wjv$@!*)ves=mvlz!hr@0%(&8!i%^fvw716w+1cch8j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tokojayabaru.com', 'www.tokojayabaru.com', '31.97.51.94']
+ALLOWED_HOSTS = ['tokojayabaru.com', 'www.tokojayabaru.com', '31.97.51.94','127.0.0.1']
 
 
 

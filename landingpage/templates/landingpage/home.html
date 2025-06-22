@@ -7,13 +7,16 @@
     <title>Toko Jaya Baru</title>
 
     <!-- Google Fonts -->
-    <link href="https:/fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <div id="static-url" data-static-url="{% static '' %}"></div>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 </head>
 <body>
+
+<!-- Static base URL untuk JS -->
+<div id="static-url" data-static-url="{% static '' %}"></div>
 
 <!-- Navbar -->
 <nav id="navbar">
@@ -23,14 +26,13 @@
         </a>
         <div class="logo-text">Toko Jaya Baru</div>
     </div>
-    
-    <!-- Hamburger Menu Button -->
+
     <div class="hamburger" id="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
     </div>
-    
+
     <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#AboutUs">About Us</a></li>
@@ -38,7 +40,6 @@
         <li><a href="#contact-us">Contact</a></li>
     </ul>
 </nav>
-
 
 <!-- Hero Section -->
 <section id="home">
@@ -85,18 +86,16 @@
                 </div>
             {% endfor %}
         </div>
-        
     </div>
 </section>
 
- <!-- Modal -->
- <div class="modal" id="productModal">
+<!-- Modal -->
+<div class="modal" id="productModal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">×</span>
-        <h2 class="products-title" id ="modal-title">Products</h2>
+        <h2 class="products-title" id="modal-title">Products</h2>
         <div class="products-container">
-            <div id="modal-products" class="product-grid">
-                </div>
+            <div id="modal-products" class="product-grid"></div>
             <div id="modal-pagination" style="display: none;">
                 <button id="prevPage">Previous</button>
                 <span id="currentPage">1</span> / <span id="totalPages">1</span>
@@ -105,7 +104,6 @@
         </div>
     </div>
 </div>
-</section>
 
 <!-- Contact Section -->
 <section id="contact-us">
@@ -126,6 +124,7 @@
     </div>
 </section>
 
+<!-- Script -->
 <script src="{% static 'js/main.js' %}"></script>
 
 <!-- Footer -->
