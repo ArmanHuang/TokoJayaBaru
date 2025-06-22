@@ -8,56 +8,53 @@ document.addEventListener('DOMContentLoaded', function() {
     const paginationControls = document.getElementById('modal-pagination');
     const closeBtn = document.querySelector('.close');
 
-    let currentProducts = allProductsData;
+    let currentProducts = allProductsData || [];
     let currentPage = 1;
     const productsPerPage = 6;
 
-    // Fungsi untuk generate HTML produk dengan atribut class dan data yang aman pakai tanda kutip
-   function generateProductHTML(productName) {
-    const imageUrl = productImagesData[productName] || (staticUrl + "default.png");
-    return `
-        <div class="product-card" data-product-name="${productName}">
-            <img src="${imageUrl}" alt="${productName}" onerror="this.src='${staticUrl}default.png'" />
-            <h4>${productName}</h4>
-        </div>
-    `;
+    // Generate HTML produk dengan safe atribut
+    function generateProductHTML(productName) {
+        const imageUrl = productImagesData[productName] || (staticUrl + "default.png");
+        return `
+            <div class="product-card" data-product-name="${productName}">
+                <img src="${imageUrl}" alt="${productName}" onerror="this.src='${staticUrl}default.png'" />
+                <h4>${productName}</h4>
+            </div>
+        `;
     }
 
-    // Render produk di modal berdasarkan daftar produk yang diberikan
+    // Render produk di modal
     function displayProducts(productsToDisplay) {
         console.log("Menampilkan produk:", productsToDisplay);
-        const productHTML = productsToDisplay.map(product => generateProductHTML(product)).join('');
+        const productHTML = productsToDisplay.map(generateProductHTML).join('');
         modalProducts.innerHTML = productHTML;
 
         console.log("Jumlah elemen product-card setelah render:", modalProducts.querySelectorAll('.product-card').length);
 
-        // Pasang event listener klik ke tiap product-card
+        // Pasang event listener klik tiap product-card
         modalProducts.querySelectorAll('.product-card').forEach(card => {
             card.addEventListener('click', function() {
                 const productName = this.dataset.productName;
                 console.log(`Produk "${productName}" diklik!`);
-                // Tambahkan logika lain sesuai kebutuhan di sini
+                // Tambah logika klik sesuai kebutuhan di sini
             });
-            console.log("Event listener ditambahkan ke:", card);
         });
     }
 
-    // Update tampilan pagination
+    // Update pagination UI
     function updatePagination() {
-        const totalPages = Math.ceil(currentProducts.length / productsPerPage) || 1;
+        if (!prevPageButton || !nextPageButton || !currentPageSpan || !totalPagesSpan || !paginationControls) return;
+
+        const totalPages = Math.max(Math.ceil(currentProducts.length / productsPerPage), 1);
         currentPageSpan.textContent = currentPage;
         totalPagesSpan.textContent = totalPages;
         prevPageButton.disabled = currentPage === 1;
         nextPageButton.disabled = currentPage === totalPages;
 
-        if (totalPages > 1) {
-            paginationControls.style.display = 'flex';
-        } else {
-            paginationControls.style.display = 'none';
-        }
+        paginationControls.style.display = totalPages > 1 ? 'flex' : 'none';
     }
 
-    // Tampilkan produk berdasarkan halaman yang dipilih
+    // Tampilkan produk per halaman
     function showPage(pageNumber) {
         currentPage = pageNumber;
         const startIndex = (currentPage - 1) * productsPerPage;
@@ -67,60 +64,59 @@ document.addEventListener('DOMContentLoaded', function() {
         updatePagination();
     }
 
-    if (currentProducts && currentProducts.length > 0) {
+    // Inisialisasi tampilan produk dan pagination
+    if (currentProducts.length > 0) {
         showPage(1);
     } else {
         modalProducts.innerHTML = '<p>Tidak ada produk yang direkomendasikan.</p>';
-        paginationControls.style.display = 'none';
+        if (paginationControls) paginationControls.style.display = 'none';
     }
 
-    // Event handler tombol pagination
-    prevPageButton.onclick = function() {
-        if (currentPage > 1) {
-            showPage(currentPage - 1);
-        }
-    };
+    // Event tombol pagination
+    if (prevPageButton) {
+        prevPageButton.onclick = function() {
+            if (currentPage > 1) showPage(currentPage - 1);
+        };
+    }
+    if (nextPageButton) {
+        nextPageButton.onclick = function() {
+            const totalPages = Math.max(Math.ceil(currentProducts.length / productsPerPage), 1);
+            if (currentPage < totalPages) showPage(currentPage + 1);
+        };
+    }
 
-    nextPageButton.onclick = function() {
-        const totalPages = Math.ceil(currentProducts.length / productsPerPage) || 1;
-        if (currentPage < totalPages) {
-            showPage(currentPage + 1);
-        }
-    };
-
-    // Fungsi menutup modal
+    // Fungsi tutup modal
     window.closeModal = function() {
+        if (!modal) return;
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
     };
 
-    if (closeBtn) {
-        closeBtn.addEventListener('click', closeModal);
-    }
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
 });
 
-// Fungsi buka modal (bila perlu)
 function openModal() {
     const modal = document.getElementById("resultModal");
+    if (!modal) return;
     modal.style.display = "flex";
+    modal.scrollTop = 0;
     document.body.classList.add("modal-open");
 }
 
-// Fungsi tutup modal (bila perlu)
 function closeModal() {
     const modal = document.getElementById("resultModal");
+    if (!modal) return;
     modal.style.display = "none";
     document.body.classList.remove("modal-open");
 }
 
-// Validasi form input usia dan pekerjaan
+// Validasi form usia & pekerjaan
 document.addEventListener('DOMContentLoaded', function () {
     const ageInput = document.getElementById('age');
     const genderSelect = document.getElementById('gender');
     const occupationSelect = document.getElementById('occupation');
     const form = document.querySelector('form');
 
-    // Rentang usia valid berdasarkan pekerjaan
     const usiaValid = {
         'Ibu Rumah Tangga': [17, 65],
         'Karyawan Swasta': [17, 50],
@@ -157,11 +153,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Gabungkan semua validasi
     function cekSemuaValidasi() {
         cekValidasiUsia();
         cekValidasiGenderPekerjaan();
     }
+
+    if (!ageInput || !genderSelect || !occupationSelect || !form) return;
 
     ageInput.addEventListener('input', cekSemuaValidasi);
     occupationSelect.addEventListener('change', cekSemuaValidasi);
