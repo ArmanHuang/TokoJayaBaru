@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const productsPerPage = 6;
 
     // Fungsi untuk generate HTML produk dengan atribut class dan data yang aman pakai tanda kutip
-    function generateProductHTML(productName) {
-        const imageUrl = productImagesData[productName] || "{% static 'images/default.png' %}";
-        return `
-            <div class="product-card" data-product-name="${productName}">
-                <img src="${imageUrl}" alt="${productName}" onerror="this.src='{% static 'images/default.png' %}'" />
-                <h4>${productName}</h4>
-            </div>
-        `;
+   function generateProductHTML(productName) {
+    const imageUrl = productImagesData[productName] || (staticUrl + "default.png");
+    return `
+        <div class="product-card" data-product-name="${productName}">
+            <img src="${imageUrl}" alt="${productName}" onerror="this.src='${staticUrl}default.png'" />
+            <h4>${productName}</h4>
+        </div>
+    `;
     }
 
     // Render produk di modal berdasarkan daftar produk yang diberikan
