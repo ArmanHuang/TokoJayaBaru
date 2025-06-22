@@ -1,21 +1,11 @@
-/* General Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and general font styles */
-html, body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #E3F2FD;
-    overflow-x: hidden;
-    color: #333;
-}
-
-/* Form Container */
+/* Poll Form Container */
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -23,7 +13,7 @@ html, body {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 .container:hover {
@@ -34,9 +24,9 @@ html, body {
 h1 {
     text-align: center;
     font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
     font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
     text-transform: uppercase;
 }
 
@@ -45,45 +35,41 @@ h1 {
 }
 
 label {
+    display: block;
     font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-input[type="number"],
 input[type="text"],
+input[type="number"],
 select {
     width: 100%;
-    padding: 12px 15px;
-    border: 2px solid #E3F2FD;
-    border-radius: 10px;
+    padding: 12px;
     font-size: 16px;
-    background-color: #E3F2FD;
-    color: #333;
-    outline: none;
-    transition: all 0.3s ease;
+    border-radius: 10px;
+    background: #E3F2FD;
+    border: 2px solid #E3F2FD;
+    transition: 0.3s;
 }
 
-input[type="number"]:focus,
-input[type="text"]:focus,
+input:focus,
 select:focus {
+    background: white;
     border-color: #1E88E5;
-    background-color: white;
+    outline: none;
 }
 
 button.btn {
     width: 100%;
     padding: 14px;
     background-color: #1E88E5;
-    color: white;
     border: none;
     border-radius: 10px;
     font-size: 18px;
+    color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: 0.3s;
 }
 
 button.btn:hover {
@@ -105,57 +91,50 @@ button.btn:hover {
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 .back-btn:hover {
     background-color: #1565C0;
 }
 
-/* Modal Styles */
+/* ===================== Modal ===================== */
 .modal {
-    display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
+    inset: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    background-color: white;
+    width: 90%;
     max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    animation: slideIn 0.5s;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     position: relative;
+    animation: slideIn 0.3s ease-in-out;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 15px;
+    right: 20px;
+    font-size: 26px;
+    color: #888;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+.close:hover {
+    color: #000;
 }
 
 @keyframes fadeIn {
@@ -164,46 +143,42 @@ button.btn:hover {
 }
 
 @keyframes slideIn {
-    from { transform: translateY(-100px); }
-    to { transform: translateY(0); }
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 /* Product Grid */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-top: 1rem;
 }
 
 .product-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    text-align: center;
     background: #f8f9fa;
     padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
 .product-card img {
     width: 100%;
+    height: auto;
     max-height: 100px;
     object-fit: contain;
-    aspect-ratio: 1 / 1; /* Prevents vertical stretching */
+    aspect-ratio: 1 / 1;
     margin-bottom: 0.5rem;
 }
 
 .product-card h4 {
     font-size: 1rem;
-    margin-top: 0.5rem;
     color: #333;
     font-weight: bold;
 }
 
-/* Pagination Controls */
+/* Pagination */
 #modal-pagination {
     display: flex;
     justify-content: center;
@@ -216,48 +191,50 @@ button.btn:hover {
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 6px;
+    margin: 0 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 0 0.25rem;
     font-size: 0.9rem;
+    transition: 0.3s;
 }
 
 #modal-pagination button:hover {
     background-color: #1565c0;
 }
 
+#modal-pagination button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
 #modal-pagination span {
-    color: #333;
     font-weight: bold;
-    margin: 0 0.5rem;
+    color: #333;
+    margin: 0 10px;
     font-size: 0.9rem;
 }
 
-#modal-pagination button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-    color: #666;
-}
-
-/* Responsive Layouts */
+/* Responsive */
 @media (max-width: 768px) {
     .product-grid {
-        grid-template-columns: 1fr; /* 1 column for mobile */
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        padding: 20px;
+        max-width: 95%;
     }
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for landscape phones */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
-}
-body.modal-open {
-    overflow: hidden;
 }
